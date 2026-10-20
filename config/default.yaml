@@ -1,0 +1,28 @@
+# Configuração do perfil completo. Credenciais NUNCA ficam aqui: a conexão com o
+# banco de origem vem de variáveis de ambiente (veja .env.example).
+profile: default
+
+source:
+  # mysql = banco de origem (../ecommerce, docker compose); parquet = cópia já extraída
+  kind: mysql
+  parquet_dir: data/source
+  tables: [regioes, calendario_comercial, categorias, produtos, variantes,
+           clientes, enderecos, pedidos, itens_pedido, fretes]
+
+paths:
+  source: data/source          # extração fiel da origem
+  gold: data/gold              # verdade: origem limpa + eventos legítimos (ETL não lê)
+  raw: data/raw                # base suja que o ETL recebe
+  defect_log: data/defect_log  # registro de defeitos (ETL não lê)
+  warehouse: data/warehouse/dq.duckdb
+  runs: data/runs              # relatório de qualidade de cada execução
+  reports: reports
+  dashboard: docs/dashboard
+  figures: assets/figures
+
+etl:
+  # Incrementos simulados por `make etl`: cada um recebe os lotes até a data.
+  # O último incremento é sempre "tudo". Rodar de novo não pode mudar nada.
+  increments: ["2026-09-30", "all"]
+  late_window_days: 7         # registro que chega até 7 dias depois entra; depois disso vai para quarentena
+  timezone_store: America/Sao_Paulo

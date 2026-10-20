@@ -1,0 +1,48 @@
+[project]
+name = "ecommerce-data-quality"
+version = "0.1.0"
+description = "Qualidade de dados num ETL de e-commerce: defeitos injetados com registro, detecção, tratamento e o efeito de cada decisão nos números de negócio"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=2.0",
+    "pyarrow>=16",
+    "scipy>=1.13",
+    "scikit-learn>=1.5",
+    "statsmodels>=0.14",
+    "pandera>=0.20",
+    "duckdb>=1.1",
+    "rapidfuzz>=3.9",
+    "PyYAML>=6.0",
+    "SQLAlchemy>=2.0",
+    "PyMySQL>=1.1",
+    "plotly>=5.24",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+dq = ["report/assets/*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = ["e2e: pipeline inteiro no perfil pequeno (data/sample)"]
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "B008"]

@@ -1,0 +1,91 @@
+uf,cidade,cep5_min,cep5_max
+AC,Rio Branco,69900,69999
+AL,Arapiraca,57000,57999
+AL,Maceió,57000,57999
+AM,Manaus,69000,69299
+AP,Macapá,68900,68999
+BA,Feira de Santana,40000,48999
+BA,Ilhéus,40000,48999
+BA,Salvador,40000,48999
+BA,Vitória da Conquista,40000,48999
+CE,Fortaleza,60000,63999
+CE,Juazeiro do Norte,60000,63999
+CE,Sobral,60000,63999
+DF,Brasília,70000,72799
+ES,Cariacica,29000,29999
+ES,Serra,29000,29999
+ES,Vila Velha,29000,29999
+ES,Vitória,29000,29999
+GO,Anápolis,72800,76799
+GO,Aparecida de Goiânia,72800,76799
+GO,Goiânia,72800,76799
+GO,Jaraguá,72800,76799
+MA,Imperatriz,65000,65999
+MA,São Luís,65000,65999
+MG,Belo Horizonte,30000,39999
+MG,Contagem,30000,39999
+MG,Divinópolis,30000,39999
+MG,Ipatinga,30000,39999
+MG,Juiz de Fora,30000,39999
+MG,Montes Claros,30000,39999
+MG,Uberlândia,30000,39999
+MS,Campo Grande,79000,79999
+MS,Dourados,79000,79999
+MT,Cuiabá,78000,78899
+MT,Rondonópolis,78000,78899
+MT,Várzea Grande,78000,78899
+PA,Ananindeua,66000,68899
+PA,Belém,66000,68899
+PA,Santarém,66000,68899
+PB,Campina Grande,58000,58999
+PB,João Pessoa,58000,58999
+PE,Caruaru,50000,56999
+PE,Jaboatão dos Guararapes,50000,56999
+PE,Olinda,50000,56999
+PE,Petrolina,50000,56999
+PE,Recife,50000,56999
+PI,Teresina,64000,64999
+PR,Cascavel,80000,87999
+PR,Curitiba,80000,87999
+PR,Londrina,80000,87999
+PR,Maringá,80000,87999
+PR,Ponta Grossa,80000,87999
+RJ,Campos dos Goytacazes,20000,28999
+RJ,Duque de Caxias,20000,28999
+RJ,Niterói,20000,28999
+RJ,Nova Iguaçu,20000,28999
+RJ,Petrópolis,20000,28999
+RJ,Rio de Janeiro,20000,28999
+RJ,Volta Redonda,20000,28999
+RN,Mossoró,59000,59999
+RN,Natal,59000,59999
+RO,Ji-Paraná,76800,76999
+RO,Porto Velho,76800,76999
+RR,Boa Vista,69300,69399
+RS,Canoas,90000,99999
+RS,Caxias do Sul,90000,99999
+RS,Pelotas,90000,99999
+RS,Porto Alegre,90000,99999
+RS,Santa Maria,90000,99999
+SC,Blumenau,88000,89999
+SC,Brusque,88000,89999
+SC,Chapecó,88000,89999
+SC,Florianópolis,88000,89999
+SC,Itajaí,88000,89999
+SC,Joinville,88000,89999
+SE,Aracaju,49000,49999
+SP,Americana,1000,19999
+SP,Bauru,1000,19999
+SP,Campinas,1000,19999
+SP,Guarulhos,1000,19999
+SP,Jundiaí,1000,19999
+SP,Osasco,1000,19999
+SP,Piracicaba,1000,19999
+SP,Ribeirão Preto,1000,19999
+SP,Santo André,1000,19999
+SP,Santos,1000,19999
+SP,Sorocaba,1000,19999
+SP,São José dos Campos,1000,19999
+SP,São Paulo,1000,19999
+TO,Araguaína,77000,77999
+TO,Palmas,77000,77999

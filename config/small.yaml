@@ -1,0 +1,18 @@
+# Perfil pequeno (CI e teste de ponta a ponta): lê a amostra versionada em
+# data/sample (~6% dos clientes, todos os pedidos deles) em vez do MySQL.
+profile: small
+
+source:
+  kind: parquet
+  parquet_dir: data/sample
+
+paths:
+  source: data/small/source
+  gold: data/small/gold
+  raw: data/small/raw
+  defect_log: data/small/defect_log
+  warehouse: data/small/warehouse/dq.duckdb
+  runs: data/small/runs
+  reports: data/small/reports
+  dashboard: data/small/dashboard
+  figures: data/small/figures
