@@ -1,0 +1,50 @@
+# Parâmetros da limpeza (src/dq/clean). Cada número aqui tem o porquê em
+# docs/DECISIONS.md e docs/CATALOG.md.
+
+texto:
+  fuzzy_cidade_min: 80          # similaridade Damerau-Levenshtein mínima (0-100): 1 erro em 5 letras; só dentro da UF
+  fuzzy_categoria_min: 90
+  remover_alias_email: true     # maria+promo@x.com -> maria@x.com na chave de identidade
+
+pedidos_teste:
+  dominios_internos: ["tecela.example"]
+  padrao_nome: '(?i)\b(?:teste|homologa\w*|qa)\b'
+  total_maximo_centavos: 100    # R$ 1,00: o menor pedido real da origem é R$ 4,45
+
+bots:
+  janela_minutos: 15
+  min_pedidos_por_ip: 8         # 8+ pedidos do mesmo IP em 15 min; o maior cliente real faz 2 em 1 h
+  min_pedidos_por_cliente: 6
+
+duplicatas:
+  janela_minutos: 10            # reenvio do checkout acontece em segundos; reposição B2B legítima em ~1 h
+  similaridade_itens_min: 0.9   # Jaccard sobre (variante, quantidade)
+  tolerancia_total: 0.01        # 1% de diferença no total
+
+datas:
+  fuso_lag_negativo_min_share: 0.20   # segmento (canal x mês) com 20%+ dos pagamentos "antes" da compra = fuso trocado
+  fuso_min_pedidos_segmento: 5
+  entrega_max_dias: 90
+
+precos:
+  razao_tabela_min: 0.55        # preço praticado / preço de tabela na origem: 0,60 a 1,00
+  razao_tabela_max: 1.0
+  separador_perdido: [50, 120]  # razão 60-100 = vírgula perdida (promoção leva o preço a 60% da tabela)
+
+frete:
+  mad_z_max: 4.0                # resíduo robusto de log(frete) dado peso e serviço
+
+outliers:
+  mad_z: 3.5                    # Iglewicz & Hoaglin: |z robusto| > 3,5
+  iqr_k: 1.5
+  zscore: 3.0
+  stl_periodo: 7
+  stl_z: 4.0
+  isolation_contamination: 0.01
+  winsor_quantil: 0.995         # só para features de modelagem, nunca para receita
+
+nulos:
+  metodo_custo_frete: modelo    # exclusao | mediana_grupo | modelo
+
+carga:
+  janela_reprocessamento_dias: 7
