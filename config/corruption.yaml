@@ -1,0 +1,76 @@
+# Parâmetros do injetor de sujeira (src/dq/corrupt). Mesmo seed + mesma base =
+# mesmo raw e mesmo registro de defeitos, byte a byte.
+seed: 20261019
+
+# Taxas são frações das linhas elegíveis (pedidos ainda não tocados por outro
+# defeito, salvo quando indicado). Contagens fixas valem para qualquer escala.
+pedidos:
+  duplicata_exata: 0.004          # mesma linha enviada 2x no mesmo lote (bug de paginação)
+  reenvio_lote_dias: 2            # dias inteiros reenviados num lote posterior (replay do ETL)
+  reenvio_lote_atraso_dias: 3
+  duplicata_aproximada: 0.006     # reenvio do checkout: novo id, mesmo cliente e itens, segundos depois
+  duplicata_aproximada_segundos: [3, 90]
+  frete_absurdo: 0.003            # frete x100 (centavos), 9999,99 (placeholder) ou x15-40
+  desconto_centavos: 0.002        # desconto gravado em centavos -> desconto > subtotal
+  frete_peso_trocado: 0.002       # frete de um pedido leve e de um pesado trocados (valores normais, combinação absurda)
+  data_futura: 0.001              # ano digitado errado (2025 -> 2052, +10 anos)
+  fuso_utc_whatsapp: ["2025-03-01", "2025-05-31"]   # integração do WhatsApp gravou criado_em em UTC sem marcar
+  atraso:
+    fracao: 0.04                  # pedido que chega em lote posterior à data da compra
+    dias_curto: [1, 1]            # 70%: chega no dia seguinte
+    dias_medio: [2, 5]            # 25%
+    dias_longo: [10, 25]          # 5%: além da janela de reprocessamento
+    pesos: [0.70, 0.25, 0.05]
+  pedido_ausente: 0.0015          # cabeçalho perdido: itens e frete ficam órfãos
+  teste: 0.0008                   # pedidos da equipe (R$ 1,00, R$ 0,01 ou conta interna)
+  bots:
+    rajadas: 4
+    pedidos_por_rajada: [30, 60]
+    minutos: [8, 15]
+
+itens_pedido:
+  preco_zero: 0.0015
+  preco_negativo: 0.001
+  preco_separador_perdido: 0.003  # "45,90" exportado como "4590"
+  quantidade_negativa: 0.001
+
+fretes:
+  entrega_antes_da_compra: 0.003
+  nulos_custo_real:               # três mecanismos de ausência em linhas disjuntas
+    mcar: 0.04                    # aleatório
+    mar_transportadora: 0.30      # depende de outra coluna: uma transportadora não devolve o custo
+    mnar_fracao_topo: 0.10        # depende do próprio valor: os 10% mais caros...
+    mnar_prob: 0.35               # ...somem com esta probabilidade (fatura contestada chega depois)
+
+clientes:
+  email_sujo: 0.04                # maiúsculas, espaços, +alias
+  conta_duplicada: 0.012          # mesma pessoa com segunda conta via +alias; parte dos pedidos vai para ela
+  cliente_ausente: 0.003          # cadastro perdido: pedidos ficam órfãos
+
+enderecos:
+  cidade_variante: 0.15
+  uf_variante: 0.03
+  cep_variante: 0.15
+  cep_de_outra_uf: 0.005
+
+produtos:
+  categoria_variante: 0.25
+
+formatos:                         # variações de formato: o parser resolve sem perder informação
+  moeda_br: 0.12                  # "1.234,56"
+  data_br: 0.05                   # "03/05/2024 13:22:01"
+  data_iso_utc: 0.06              # "2024-05-03T16:22:01Z" (UTC explícito)
+
+legitimos:                        # outliers verdadeiros: ficam no gold e no registro como legítimos
+  seed: 20231001                  # semente própria: mudar a sujeira não muda a verdade
+  b2b:
+    pedidos: 30
+    reposicoes_mesmo_dia: 3       # pares de pedidos do mesmo cliente com ~1h de diferença (itens diferentes)
+    rolos_por_item: [3, 20]       # rolos de 25-50 m: pedidos de R$ 20-90 mil
+    inicio: "2025-01-15"
+    fim: "2026-09-30"
+  viral:
+    inicio: "2025-06-03"
+    dias: 10
+    pedidos_extra_sobre_media_diaria: 0.9   # cada dia recebe +90% da média diária de pedidos
+  black_friday: true              # marca os pedidos dos dias de Black Friday (já existem na origem)
