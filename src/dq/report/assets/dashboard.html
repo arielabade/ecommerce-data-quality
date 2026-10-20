@@ -283,7 +283,7 @@ const TECH_TITLES = {
   precos_item: (rows) => { const r = rows.find(x => x.tecnica.includes('ETL'));
     return `Para preço de item, regra explícita (preço entre 55% e 100% da tabela) acerta ${pct(r.precisao, 0)} com recall de ${pct(r.recall, 0)}; estatística nenhuma chega perto`; },
   serie_diaria: (rows) => { const s = rows.find(x => x.tecnica === 'STL (resíduo)'), c = rows.find(x => x.tecnica.includes('calendário')), q = rows.find(x => x.tecnica === 'IQR global');
-    return `IQR global não vê o dia reenviado e marca a Black Friday; STL acha os ${nf(s.erros_existentes)} dias reenviados, e o calendário comercial tira os alarmes de data comemorativa`; },
+    return `IQR global não vê nenhum dos ${nf(q.erros_existentes)} dias reenviados e marca a Black Friday; STL acha ${nf(s.acertos)} de ${nf(s.erros_existentes)}, e o calendário comercial zera os alarmes em datas comemorativas`; },
   duplicatas: (rows) => { const w = rows.find(x => x.tecnica.startsWith('Janela de 10 min, sem')), e = rows.find(x => x.tecnica.includes('ETL'));
     return `Só a janela de tempo confunde ${nf(w.sinalizados - w.acertos)} pedidos com reenvio; somar "itens iguais" leva a precisão de ${pct(w.precisao, 0)} para ${pct(e.precisao, 1)}`; },
   nao_vendas: () => 'Testes e bots saem por regra simples: conta interna e velocidade de pedidos por IP',

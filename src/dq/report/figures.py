@@ -70,7 +70,7 @@ def techniques(ev: dict, out: Path) -> None:
     y = range(len(rows))
     ax.barh([i + 0.2 for i in y], rows["precisao"] * 100, height=0.38, color=COBALT, label="precisão")
     ax.barh([i - 0.2 for i in y], rows["recall"] * 100, height=0.38, color=AMBER, label="recall")
-    ax.set_yticks(list(y), [f"{t}\n{int(l):,} legítimos derrubados".replace(",", ".") for t, l in
+    ax.set_yticks(list(y), [f"{t}\n{int(n):,} legítimos derrubados".replace(",", ".") for t, n in
                             zip(rows["tecnica"], rows["legitimos_derrubados"], strict=True)], fontsize=9.5)
     ax.set_xlim(0, 105)
     ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0f}%")

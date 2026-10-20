@@ -103,5 +103,5 @@ quarentena (fora das métricas, guardado para reprocessar) · padronizar (só gr
 | Evento | Como aparece | O que o ETL faz | Por quê |
 | --- | --- | --- | --- |
 | Black Friday (`legitimo_black_friday`) | Pico de pedidos e receita nos dias da promoção (já existe na origem) | nada; o monitor STL + calendário registra como esperado | É o melhor dia do ano, não erro. |
-| Cliente B2B (`legitimo_b2b`) | Confecção que compra rolos: pedidos de R$ 13 mil a R$ 105 mil | `ticket_atipico_para_o_segmento` só se for atípico **para confecção** | Comparar com pares do mesmo segmento. |
+| Cliente B2B (`legitimo_b2b`) | Confecção que compra rolos: pedidos de R$ 4 mil a R$ 118 mil | `ticket_atipico_para_o_segmento` só se for atípico **para confecção** | Comparar com pares do mesmo segmento. |
 | Produto viral (`legitimo_viral`) | Uma chita vende +90% de pedidos por 10 dias em junho/2025 | nada | Alerta sem evento comercial vira investigação, não exclusão. |

@@ -23,7 +23,7 @@ contra o registro de defeitos, e estão completos em [`reports/EVALUATION.md`](.
 **Quando serve:** dado aproximadamente simétrico, olhada rápida num gráfico de caixa.
 **Quando distorce:** ticket de e-commerce é muito assimétrico (cauda longa de compras grandes).
 A cerca de cima corta a cauda inteira. Aqui, aplicado a frete, desconto e total, marcou
-34.703 pedidos para achar 942 erros (precisão de 2,7%) e derrubou 2.499 pedidos legítimos.
+34.697 pedidos para achar 942 erros (precisão de 2,7%) e derrubou 2.499 pedidos legítimos.
 
 ### z-score (média e desvio padrão)
 
@@ -69,8 +69,10 @@ período 7, sobre `log(1 + receita)`). Alerta se o z robusto do resíduo passa d
 
 **Sozinho ainda erra:** a Black Friday é um pico anual, não semanal, então vira resíduo. **Com o
 calendário comercial** (Black Friday, Dia das Mães, promoções), o pico explicado vira "esperado"
-e o resto vira alerta. Aqui: IQR global na receita diária marcou 32 dias e nenhum era o dia
-reenviado; STL achou os 2 dias reenviados.
+e o resto vira alerta. Aqui: IQR global na receita diária marcou 28 dias e nenhum era um dos
+2 dias reenviados. Um dia comum dobrado (R$ 64–67 mil) continua abaixo da cerca (R$ 70 mil),
+que é definida pelos picos reais. O STL achou 1 dos 2, e com o calendário comercial deixou de
+marcar os 5 dias legítimos que o STL sozinho marcava.
 
 ### Isolation Forest
 
@@ -81,8 +83,8 @@ cortes é raro. Usa total, frete, peso, desconto/subtotal, frete/kg e número de
 mais isolado. Score = `2^(−E[h(x)]/c(n))`.
 
 **Quando serve:** triagem para um analista olhar, quando não há regra que descreva o problema.
-**Limite:** marca o raro, não o errado. Aqui teve 35% de precisão e marcou 148 pedidos
-legítimos; o raro inclui o B2B e a Black Friday.
+**Limite:** marca o raro, não o errado. Aqui teve 38% de precisão, 55% de recall e marcou 142
+pedidos legítimos; o raro inclui o B2B e a Black Friday.
 
 ### Regras de negócio
 
@@ -130,7 +132,7 @@ separam MAR de MNAR; o documento diz isso em vez de fingir.
 
 **Métodos comparados** (`reports/imputacao.csv`): exclusão, mediana por serviço × faixa de
 peso, e gradient boosting (peso, valor cobrado, serviço, transportadora). O modelo erra
-R$ 2,7 por envio em MCAR/MAR contra R$ 5,1–5,6 da mediana; no MNAR todos erram mais de R$ 10
+R$ 2,6–2,8 por envio em MCAR/MAR contra R$ 5,1–5,5 da mediana; no MNAR todos erram mais de R$ 10
 e para baixo. Excluir os nulos subestima o custo médio de frete em 4%.
 
 ---
@@ -142,7 +144,7 @@ e para baixo. Excluir os nulos subestima o custo médio de frete em 4%.
 - **Aproximadas:** o reenvio do checkout tem outro id, outro número e outro horário; nenhum hash
   pega. Critério: mesmo cliente, até 10 minutos, itens com Jaccard ≥ 0,9
   (`|A ∩ B| / |A ∪ B|` sobre pares variante:quantidade) e total a 1%. Só a janela de tempo
-  tem 84% de precisão: confunde bot e cliente fiel com reenvio. Com os itens, 99,8%.
+  tem 85% de precisão: confunde bot e cliente fiel com reenvio. Com os itens, 99,2%.
 - **De cliente:** a mesma pessoa com `maria+loja@` e `maria@` vira um cliente pela chave de
   e-mail canônico.
 
@@ -175,10 +177,10 @@ Exemplo com o ticket de cada pedido pago (`reports/escalas.csv`):
 
 | Escala | Fórmula | Assimetria depois | O que acontece |
 | --- | --- | ---: | --- |
-| original | x | ~58 | cauda enorme |
-| min-max | (x − mín) / (máx − mín) | ~58 | **distorce:** um pedido B2B vira 1 e 100% dos outros ficam espremidos em 0–0,1 |
-| z-score | (x − média) / desvio | ~58 | **distorce:** média e desvio puxados pela cauda; mesma forma |
-| escala robusta | (x − mediana) / IQR | ~58 | centro estável, mas a forma não muda (é linear) |
+| original | x | ~67 | cauda enorme |
+| min-max | (x − mín) / (máx − mín) | ~67 | **distorce:** um pedido B2B vira 1 e 100% dos outros ficam espremidos em 0–0,1 |
+| z-score | (x − média) / desvio | ~67 | **distorce:** média e desvio puxados pela cauda; mesma forma |
+| escala robusta | (x − mediana) / IQR | ~67 | centro estável, mas a forma não muda (é linear) |
 | log(1 + x) | ln(1 + x) | ~0,5 | **ajuda:** cauda vira quase simétrica; só para x ≥ 0 |
 | Yeo-Johnson | potência ajustada por máxima verossimilhança | ~0 | **ajuda:** o mais próximo de normal; aceita zero e negativo |
 

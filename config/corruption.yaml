@@ -66,7 +66,7 @@ legitimos:                        # outliers verdadeiros: ficam no gold e no reg
   b2b:
     pedidos: 30
     reposicoes_mesmo_dia: 3       # pares de pedidos do mesmo cliente com ~1h de diferença (itens diferentes)
-    rolos_por_item: [3, 20]       # rolos de 25-50 m: pedidos de R$ 20-90 mil
+    rolos_por_item: [3, 20]       # rolos de 25-50 m: pedidos de R$ 4 mil a R$ 120 mil
     inicio: "2025-01-15"
     fim: "2026-09-30"
   viral:
