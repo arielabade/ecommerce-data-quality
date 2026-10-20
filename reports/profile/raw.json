@@ -1,0 +1,2591 @@
+{
+ "tabelas": {
+  "calendario_comercial": {
+   "linhas": 1109,
+   "colunas": {
+    "data": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 1109,
+     "distintos_pct": 100.0,
+     "top": {
+      "2023-10-01": 1,
+      "2023-10-02": 1,
+      "2023-10-03": 1,
+      "2023-10-04": 1,
+      "2023-10-05": 1,
+      "2023-10-06": 1,
+      "2023-10-07": 1,
+      "2023-10-08": 1
+     },
+     "comprimento": {
+      "min": 10,
+      "max": 10
+     },
+     "formas": {
+      "9999-99-99": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "dia_semana": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 7,
+     "distintos_pct": 0.631,
+     "top": {
+      "7": 159,
+      "1": 159,
+      "2": 159,
+      "3": 158,
+      "4": 158,
+      "5": 158,
+      "6": 158
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 1
+     },
+     "formas": {
+      "9": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "feriado_nacional": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.18,
+     "top": {
+      "0": 1069,
+      "1": 40
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 1
+     },
+     "formas": {
+      "9": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "nome_feriado": {
+     "tipo": "string",
+     "nulos": 1069,
+     "nulos_pct": 96.393,
+     "distintos": 12,
+     "distintos_pct": 30.0,
+     "top": {
+      "Carnaval": 6,
+      "Nossa Senhora Aparecida": 4,
+      "Finados": 3,
+      "Proclamação da República": 3,
+      "Dia da Consciência Negra": 3,
+      "Natal": 3,
+      "Confraternização Universal": 3,
+      "Sexta-feira Santa": 3
+     },
+     "comprimento": {
+      "min": 5,
+      "max": 26
+     },
+     "formas": {
+      "Aa+": 45.0,
+      "Aa+ Aa+": 15.0,
+      "Aa+ Aa+ Aa+": 10.0,
+      "Aa+ aa Aa+": 7.5,
+      "Aaa aa Aa+ Aa+": 7.5,
+      "Aa+-a+ Aa+": 7.5
+     },
+     "formas_distintas": 7,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "evento_comercial": {
+     "tipo": "string",
+     "nulos": 779,
+     "nulos_pct": 70.243,
+     "distintos": 10,
+     "distintos_pct": 3.03,
+     "top": {
+      "festa_junina": 105,
+      "natal": 51,
+      "volta_as_aulas": 42,
+      "black_friday": 33,
+      "dia_das_maes": 33,
+      "volta_as_aulas|carnaval": 24,
+      "carnaval": 18,
+      "dia_do_consumidor": 12
+     },
+     "comprimento": {
+      "min": 5,
+      "max": 23
+     },
+     "formas": {
+      "a+_a+": 41.82,
+      "a+": 20.91,
+      "a+_aa_a+": 19.09,
+      "a+_a+_a+": 10.0,
+      "a+_aa_a+|a+": 7.27,
+      "a+_a+|a+": 0.91
+     },
+     "formas_distintas": 6,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "promocao_loja": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.18,
+     "top": {
+      "0": 797,
+      "1": 312
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 1
+     },
+     "formas": {
+      "9": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "nome_promocao": {
+     "tipo": "string",
+     "nulos": 797,
+     "nulos_pct": 71.867,
+     "distintos": 7,
+     "distintos_pct": 2.244,
+     "top": {
+      "Semana do Linho e da Viscose": 81,
+      "Liquidação de Malhas": 81,
+      "Queima Pós-Natal": 48,
+      "Black Friday": 39,
+      "Arraiá de Chitas": 36,
+      "Dia da Costureira": 15,
+      "Dia do Consumidor": 12
+     },
+     "comprimento": {
+      "min": 12,
+      "max": 28
+     },
+     "formas": {
+      "Aa+ aa Aa+": 37.5,
+      "Aa+ aa Aa+ a aa Aa+": 25.96,
+      "Aa+ Aáa-Aa+": 15.38,
+      "Aa+ Aa+": 12.5,
+      "Aaa aa Aa+": 8.65
+     },
+     "formas_distintas": 5,
+     "espacos_nas_bordas_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "data"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  },
+  "categorias": {
+   "linhas": 29,
+   "colunas": {
+    "categoria_id": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 29,
+     "distintos_pct": 100.0,
+     "top": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "100": 1,
+      "101": 1
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 3
+     },
+     "formas": {
+      "999": 79.31,
+      "9": 20.69
+     },
+     "formas_distintas": 2,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "categoria_pai_id": {
+     "tipo": "string",
+     "nulos": 6,
+     "nulos_pct": 20.69,
+     "distintos": 6,
+     "distintos_pct": 26.087,
+     "top": {
+      "5": 6,
+      "4": 5,
+      "1": 4,
+      "2": 3,
+      "3": 3,
+      "6": 2
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 1
+     },
+     "formas": {
+      "9": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "nome": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 29,
+     "distintos_pct": 100.0,
+     "top": {
+      "Algodão": 1,
+      "Linho": 1,
+      "Viscose": 1,
+      "Malha": 1,
+      "Sintéticos e Especiais": 1,
+      "Jeans e Sarja": 1,
+      "Tricoline": 1,
+      "Chita": 1
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 24
+     },
+     "formas": {
+      "Aa+": 51.72,
+      "Aa+ a Aa+": 20.69,
+      "Aa+ Aa+": 13.79,
+      "Aa+ Aaa a Aa+": 3.45,
+      "Aa+ AA": 3.45,
+      "Aa+ 999% Aa+": 3.45
+     },
+     "formas_distintas": 7,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "slug": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 29,
+     "distintos_pct": 100.0,
+     "top": {
+      "algodao": 1,
+      "linho": 1,
+      "viscose": 1,
+      "malha": 1,
+      "sinteticos-e-especiais": 1,
+      "jeans-e-sarja": 1,
+      "algodao-tricoline": 1,
+      "algodao-chita": 1
+     },
+     "comprimento": {
+      "min": 5,
+      "max": 47
+     },
+     "formas": {
+      "a+-a+": 24.14,
+      "a+": 13.79,
+      "a+-a+-a+": 13.79,
+      "a+-a-a+-a+": 13.79,
+      "a+-a-a+-a+-a-a+": 10.34,
+      "a+-a-a+": 6.9
+     },
+     "formas_distintas": 11,
+     "espacos_nas_bordas_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "categoria_id"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  },
+  "clientes": {
+   "linhas": 51645,
+   "colunas": {
+    "cliente_id": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 51645,
+     "distintos_pct": 100.0,
+     "top": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 5
+     },
+     "formas": {
+      "99999": 80.69,
+      "9999": 17.38,
+      "999": 1.74,
+      "99": 0.17,
+      "9": 0.02
+     },
+     "formas_distintas": 5,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "tipo_cliente": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 4,
+     "distintos_pct": 0.008,
+     "top": {
+      "hobby": 26466,
+      "costureira": 18020,
+      "atelie": 5094,
+      "confeccao": 2065
+     },
+     "comprimento": {
+      "min": 5,
+      "max": 10
+     },
+     "formas": {
+      "a+": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "tipo_pessoa": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.004,
+     "top": {
+      "PF": 46398,
+      "PJ": 5247
+     },
+     "comprimento": {
+      "min": 2,
+      "max": 2
+     },
+     "formas": {
+      "AA": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "nome": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 33560,
+     "distintos_pct": 64.982,
+     "top": {
+      "Larissa da Costa": 10,
+      "Eloá da Cunha": 10,
+      "Vitória da Cunha": 9,
+      "Daniela Sampaio": 9,
+      "Maria Clara Sampaio": 9,
+      "Laura Rocha": 9,
+      "Maria Nunes": 9,
+      "Juliana Castro": 9
+     },
+     "comprimento": {
+      "min": 6,
+      "max": 38
+     },
+     "formas": {
+      "Aa+ Aa+": 42.81,
+      "Aa+ Aa+ Aa+": 27.33,
+      "Aaa Aa+ Aa+": 4.43,
+      "Aa+ aa Aa+": 3.96,
+      "Aa+ Aa+ Aa+ Aa+": 3.96,
+      "Aa+ Aa+ aa Aa+": 2.37
+     },
+     "formas_distintas": 149,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "razao_social": {
+     "tipo": "string",
+     "nulos": 46398,
+     "nulos_pct": 89.84,
+     "distintos": 4207,
+     "distintos_pct": 80.179,
+     "top": {
+      "da Mata Confecções ME": 5,
+      "Rios Atelier Ltda": 5,
+      "Pimenta Ajustes e Reformas ME": 5,
+      "Souza Costuras MEI": 5,
+      "Porto Moda Ltda": 4,
+      "Moda Erick ME": 4,
+      "Cardoso Costura Criativa MEI": 4,
+      "Costuras Maria Eduarda Ltda": 4
+     },
+     "comprimento": {
+      "min": 11,
+      "max": 41
+     },
+     "formas": {
+      "Aa+ Aa+ A+": 24.53,
+      "Aa+ Aa+ Aa+": 13.0,
+      "Aa+ Aa+ AA": 12.65,
+      "Aa+ Aa+ Aa+ A+": 9.13,
+      "Aa+ Aa+ Aa+ Aa+": 5.41,
+      "Aa+ Aa+ Aa+ AA": 4.9
+     },
+     "formas_distintas": 119,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "email": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 51645,
+     "distintos_pct": 100.0,
+     "top": {
+      "mariacecilia.daluz+tecela@example.net": 1,
+      "manuella_vargas@email.test": 1,
+      "aviana@example.net": 1,
+      "melina60@example.net": 1,
+      "hadassa_casagrande@correio.example": 1,
+      "compras@alvesmodaautor.example": 1,
+      "agarcia@example.net": 1,
+      "uniformesianeireli@uniformesianei.example": 1
+     },
+     "comprimento": {
+      "min": 14,
+      "max": 53
+     },
+     "formas": {
+      "a+@a+.a+": 32.25,
+      "a+_a+@a+.a+": 15.3,
+      "a+.a+@a+.a+": 15.21,
+      "a+99@a+.a+": 13.9,
+      "a+.a+9999@a+.a+": 8.45,
+      "a+.a+999@a+.a+": 7.53
+     },
+     "formas_distintas": 85,
+     "espacos_nas_bordas_pct": 1.545
+    },
+    "cadastrado_em": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 51622,
+     "distintos_pct": 99.955,
+     "top": {
+      "2023-10-01 00:00:05": 3,
+      "2022-12-12 09:06:00": 2,
+      "2023-06-20 00:58:00": 2,
+      "2023-08-13 07:24:00": 2,
+      "2022-09-13 02:22:00": 2,
+      "2022-04-10 20:34:00": 2,
+      "2023-12-07 16:03:33": 2,
+      "2024-07-10 11:01:54": 2
+     },
+     "comprimento": {
+      "min": 19,
+      "max": 19
+     },
+     "formas": {
+      "9999-99-99 99:99:99": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "origem_cadastro": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 4,
+     "distintos_pct": 0.008,
+     "top": {
+      "checkout": 41954,
+      "newsletter": 5696,
+      "importacao_legado": 3193,
+      "whatsapp": 802
+     },
+     "comprimento": {
+      "min": 8,
+      "max": 17
+     },
+     "formas": {
+      "a+": 93.82,
+      "a+_a+": 6.18
+     },
+     "formas_distintas": 2,
+     "espacos_nas_bordas_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "cliente_id"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  },
+  "enderecos": {
+   "linhas": 55684,
+   "colunas": {
+    "endereco_id": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 55684,
+     "distintos_pct": 100.0,
+     "top": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 5
+     },
+     "formas": {
+      "99999": 82.04,
+      "9999": 16.16,
+      "999": 1.62,
+      "99": 0.16,
+      "9": 0.02
+     },
+     "formas_distintas": 5,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "cliente_id": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 51178,
+     "distintos_pct": 91.908,
+     "top": {
+      "2": 2,
+      "3": 2,
+      "6": 2,
+      "20": 2,
+      "30": 2,
+      "46": 2,
+      "48": 2,
+      "60": 2
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 5
+     },
+     "formas": {
+      "99999": 80.36,
+      "9999": 17.68,
+      "999": 1.76,
+      "99": 0.18,
+      "9": 0.02
+     },
+     "formas_distintas": 5,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "tipo": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.004,
+     "top": {
+      "entrega": 53400,
+      "cobranca": 2284
+     },
+     "comprimento": {
+      "min": 7,
+      "max": 8
+     },
+     "formas": {
+      "a+": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "cep": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 55671,
+     "distintos_pct": 99.977,
+     "top": {
+      "76193-639": 2,
+      "08377-731": 2,
+      "19495-587": 2,
+      "60160-251": 2,
+      "29584-067": 2,
+      "07749-186": 2,
+      "72493-675": 2,
+      "60519-432": 2
+     },
+     "comprimento": {
+      "min": 7,
+      "max": 10
+     },
+     "formas": {
+      "99999-999": 85.0,
+      "99999999": 4.92,
+      "99.999-999": 4.82,
+      " 99999-999": 4.78,
+      "9999999": 0.48
+     },
+     "formas_distintas": 5,
+     "espacos_nas_bordas_pct": 4.775
+    },
+    "bairro": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 482,
+     "distintos_pct": 0.866,
+     "top": {
+      "Belvedere": 142,
+      "Ventosa": 142,
+      "Conjunto Taquaril": 142,
+      "São Bento": 141,
+      "Vila São Francisco": 141,
+      "Penha": 140,
+      "Santa Maria": 139,
+      "São Jorge 3ª Seção": 138
+     },
+     "comprimento": {
+      "min": 3,
+      "max": 33
+     },
+     "formas": {
+      "Aa+": 32.93,
+      "Aa+ Aa+": 29.36,
+      "Aa+ Aa+ Aa+": 5.4,
+      "Aáa Aa+": 4.4,
+      "Aa+ Aa Aa+": 3.99,
+      "Aa+ Aa+ Aa+ 9a Aa+": 2.51
+     },
+     "formas_distintas": 44,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "cidade": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 1054,
+     "distintos_pct": 1.893,
+     "top": {
+      "São Paulo": 7751,
+      "Rio de Janeiro": 3802,
+      "Belo Horizonte": 2497,
+      "Curitiba": 1692,
+      "Salvador": 1631,
+      "Porto Alegre": 1411,
+      "Brasília": 1402,
+      "Fortaleza": 1217
+     },
+     "comprimento": {
+      "min": 2,
+      "max": 28
+     },
+     "formas": {
+      "Aa+": 45.45,
+      "Aáa Aa+": 14.65,
+      "Aa+ Aa+": 14.4,
+      "Aaa aa Aa+": 6.87,
+      "Aa+ aa Aa+": 3.69,
+      "A+": 2.15
+     },
+     "formas_distintas": 110,
+     "espacos_nas_bordas_pct": 1.291
+    },
+    "uf": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 129,
+     "distintos_pct": 0.232,
+     "top": {
+      "SP": 15553,
+      "RJ": 6404,
+      "MG": 5496,
+      "PR": 3499,
+      "RS": 2898,
+      "BA": 2698,
+      "SC": 2644,
+      "PE": 2039
+     },
+     "comprimento": {
+      "min": 2,
+      "max": 19
+     },
+     "formas": {
+      "AA": 97.0,
+      "aa": 0.75,
+      " AA ": 0.72,
+      "A+ A+": 0.35,
+      "Aa+": 0.27,
+      "A+": 0.23
+     },
+     "formas_distintas": 14,
+     "espacos_nas_bordas_pct": 0.724
+    },
+    "principal": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.004,
+     "top": {
+      "1": 51178,
+      "0": 4506
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 1
+     },
+     "formas": {
+      "9": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "criado_em": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 51158,
+     "distintos_pct": 91.872,
+     "top": {
+      "2023-08-13 07:24:00": 3,
+      "2024-09-20 20:01:03": 3,
+      "2024-10-28 21:23:17": 3,
+      "2022-01-10 00:29:00": 2,
+      "2021-12-24 18:45:00": 2,
+      "2022-05-03 06:58:00": 2,
+      "2023-01-08 19:51:00": 2,
+      "2023-01-02 16:31:00": 2
+     },
+     "comprimento": {
+      "min": 19,
+      "max": 19
+     },
+     "formas": {
+      "9999-99-99 99:99:99": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "endereco_id"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  },
+  "fretes": {
+   "linhas": 147883,
+   "colunas": {
+    "frete_id": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 147069,
+     "distintos_pct": 99.45,
+     "top": {
+      "225": 2,
+      "498": 2,
+      "763": 2,
+      "840": 2,
+      "1040": 2,
+      "1548": 2,
+      "2131": 2,
+      "2248": 2
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 6
+     },
+     "formas": {
+      "99999": 61.18,
+      "999999": 32.04,
+      "9999": 6.1,
+      "999": 0.61,
+      "99": 0.06,
+      "9": 0.01
+     },
+     "formas_distintas": 6,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "pedido_id": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 147069,
+     "distintos_pct": 99.45,
+     "top": {
+      "225": 2,
+      "498": 2,
+      "763": 2,
+      "840": 2,
+      "1040": 2,
+      "1548": 2,
+      "2131": 2,
+      "2248": 2
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 6
+     },
+     "formas": {
+      "99999": 61.18,
+      "999999": 32.04,
+      "9999": 6.1,
+      "999": 0.61,
+      "99": 0.06,
+      "9": 0.01
+     },
+     "formas_distintas": 6,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "transportadora": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 4,
+     "distintos_pct": 0.003,
+     "top": {
+      "Correios": 103791,
+      "Jadlog": 32601,
+      "Loggi": 7468,
+      "Retirada na loja": 4023
+     },
+     "comprimento": {
+      "min": 5,
+      "max": 16
+     },
+     "formas": {
+      "Aa+": 97.28,
+      "Aa+ aa a+": 2.72
+     },
+     "formas_distintas": 2,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "servico": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 6,
+     "distintos_pct": 0.004,
+     "top": {
+      "PAC": 79992,
+      "Jadlog .Package": 32568,
+      "SEDEX": 23799,
+      "Loggi Expresso": 7468,
+      "Retirada": 4023,
+      "Jadlog .Com": 33
+     },
+     "comprimento": {
+      "min": 3,
+      "max": 15
+     },
+     "formas": {
+      "A+": 70.18,
+      "Aa+ .Aa+": 22.02,
+      "Aa+ Aa+": 5.05,
+      "Aa+": 2.72,
+      "Aa+ .Aaa": 0.02
+     },
+     "formas_distintas": 5,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "peso_kg": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 14923,
+     "distintos_pct": 10.091,
+     "top": {
+      "0.402": 467,
+      "0.570": 447,
+      "0.654": 439,
+      "0.326": 430,
+      "0.318": 396,
+      "0.486": 395,
+      "0.426": 389,
+      "0.465": 388
+     },
+     "comprimento": {
+      "min": 5,
+      "max": 7
+     },
+     "formas": {
+      "9.999": 85.58,
+      "9,999": 11.64,
+      "99.999": 2.4,
+      "99,999": 0.36,
+      "999.999": 0.02,
+      "999,999": 0.0
+     },
+     "formas_distintas": 6,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "frete_gratis": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.001,
+     "top": {
+      "0": 96679,
+      "1": 51204
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 1
+     },
+     "formas": {
+      "9": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "prazo_estimado_dias": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 14,
+     "distintos_pct": 0.009,
+     "top": {
+      "6": 27969,
+      "5": 24094,
+      "7": 23431,
+      "4": 15412,
+      "8": 10976,
+      "9": 9676,
+      "3": 8569,
+      "10": 7225
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 2
+     },
+     "formas": {
+      "9": 88.3,
+      "99": 11.7
+     },
+     "formas_distintas": 2,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "postado_em": {
+     "tipo": "string",
+     "nulos": 14282,
+     "nulos_pct": 9.658,
+     "distintos": 131585,
+     "distintos_pct": 98.491,
+     "top": {
+      "2024-05-01 15:49:50": 3,
+      "2024-08-05 17:32:39": 3,
+      "2024-09-23 15:21:54": 3,
+      "2024-11-26 17:15:43": 3,
+      "2025-02-26 14:17:46": 3,
+      "2025-04-14 15:32:27": 3,
+      "2025-06-09 15:01:11": 3,
+      "2025-09-01 16:45:49": 3
+     },
+     "comprimento": {
+      "min": 19,
+      "max": 20
+     },
+     "formas": {
+      "9999-99-99 99:99:99": 88.92,
+      "9999-99-99A99:99:99A": 6.05,
+      "99/99/9999 99:99:99": 5.03
+     },
+     "formas_distintas": 3,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "entregue_em": {
+     "tipo": "string",
+     "nulos": 14580,
+     "nulos_pct": 9.859,
+     "distintos": 131733,
+     "distintos_pct": 98.822,
+     "top": {
+      "2024-11-09 14:02:59": 3,
+      "2025-02-24 11:41:02": 3,
+      "2025-05-10 12:45:38": 3,
+      "2025-05-12 14:13:35": 3,
+      "2025-08-15 11:52:39": 3,
+      "2026-03-15 13:13:03": 3,
+      "2026-03-26 14:44:32": 3,
+      "2023-10-06 09:05:57": 2
+     },
+     "comprimento": {
+      "min": 19,
+      "max": 20
+     },
+     "formas": {
+      "9999-99-99 99:99:99": 88.93,
+      "9999-99-99A99:99:99A": 6.05,
+      "99/99/9999 99:99:99": 5.03
+     },
+     "formas_distintas": 3,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "valor_cobrado": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 10640,
+     "distintos_pct": 7.195,
+     "top": {
+      "0.00": 45019,
+      "0,00": 6185,
+      "12.66": 158,
+      "17.25": 140,
+      "17.28": 136,
+      "17.09": 135,
+      "17.21": 134,
+      "17.30": 133
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 8
+     },
+     "formas": {
+      "99.99": 57.08,
+      "9.99": 30.44,
+      "99,99": 7.74,
+      "9,99": 4.18,
+      "999.99": 0.38,
+      "9999.99": 0.1
+     },
+     "formas_distintas": 8,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "custo_real": {
+     "tipo": "string",
+     "nulos": 19865,
+     "nulos_pct": 13.433,
+     "distintos": 10274,
+     "distintos_pct": 8.025,
+     "top": {
+      "0.00": 3404,
+      "0,00": 502,
+      "16.45": 127,
+      "17.12": 117,
+      "16.35": 115,
+      "16.23": 114,
+      "16.89": 110,
+      "16.66": 110
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 6
+     },
+     "formas": {
+      "99.99": 84.95,
+      "99,99": 11.55,
+      "9.99": 2.66,
+      "999.99": 0.39,
+      "9,99": 0.39,
+      "999,99": 0.06
+     },
+     "formas_distintas": 6,
+     "espacos_nas_bordas_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "frete_id"
+    ],
+    "duplicadas": 814,
+    "linhas_identicas": 588
+   }
+  },
+  "itens_pedido": {
+   "linhas": 275625,
+   "colunas": {
+    "item_pedido_id": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 274060,
+     "distintos_pct": 99.432,
+     "top": {
+      "454": 2,
+      "455": 2,
+      "456": 2,
+      "1010": 2,
+      "1011": 2,
+      "1012": 2,
+      "1502": 2,
+      "1503": 2
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 6
+     },
+     "formas": {
+      "999999": 63.54,
+      "99999": 32.77,
+      "9999": 3.32,
+      "999": 0.33,
+      "99": 0.04,
+      "9": 0.0
+     },
+     "formas_distintas": 6,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "pedido_id": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 147069,
+     "distintos_pct": 53.358,
+     "top": {
+      "50217": 16,
+      "35895": 14,
+      "15617": 12,
+      "33008": 12,
+      "80891": 12,
+      "108991": 12,
+      "113801": 12,
+      "115072": 12
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 6
+     },
+     "formas": {
+      "99999": 61.28,
+      "999999": 31.82,
+      "9999": 6.17,
+      "999": 0.65,
+      "99": 0.07,
+      "9": 0.01
+     },
+     "formas_distintas": 6,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "variante_id": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2070,
+     "distintos_pct": 0.751,
+     "top": {
+      "1231": 2579,
+      "905": 1832,
+      "1962": 1761,
+      "737": 1639,
+      "934": 1515,
+      "323": 1476,
+      "327": 1378,
+      "322": 1375
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 4
+     },
+     "formas": {
+      "999": 46.5,
+      "9999": 45.63,
+      "99": 7.52,
+      "9": 0.35
+     },
+     "formas_distintas": 4,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "quantidade": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 194,
+     "distintos_pct": 0.07,
+     "top": {
+      "1.00": 36682,
+      "1.50": 36280,
+      "2.00": 33723,
+      "2.50": 26492,
+      "3.00": 19992,
+      "3.50": 15413,
+      "4.00": 12015,
+      "0.50": 11148
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 6
+     },
+     "formas": {
+      "9.99": 84.99,
+      "9,99": 11.54,
+      "99.99": 2.96,
+      "99,99": 0.41,
+      "-9.99": 0.09,
+      "-9,99": 0.01
+     },
+     "formas_distintas": 7,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "preco_unitario": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 1381,
+     "distintos_pct": 0.501,
+     "top": {
+      "37.90": 10586,
+      "42.90": 10278,
+      "33.90": 8858,
+      "36.90": 8280,
+      "46.90": 8171,
+      "44.90": 7832,
+      "40.90": 7694,
+      "34.90": 7260
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 10
+     },
+     "formas": {
+      "99.99": 81.53,
+      "99,99": 11.05,
+      "999.99": 3.0,
+      "9.99": 2.16,
+      "9999.99": 1.26,
+      "999,99": 0.41
+     },
+     "formas_distintas": 17,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "preco_tabela": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 898,
+     "distintos_pct": 0.326,
+     "top": {
+      "37.90": 10874,
+      "42.90": 10733,
+      "33.90": 8844,
+      "46.90": 8733,
+      "36.90": 8397,
+      "44.90": 8227,
+      "40.90": 7948,
+      "34.90": 7504
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 8
+     },
+     "formas": {
+      "99.99": 82.0,
+      "99,99": 11.11,
+      "999.99": 3.13,
+      "9.99": 1.87,
+      "9999.99": 1.04,
+      "999,99": 0.43
+     },
+     "formas_distintas": 8,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "custo_unitario": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 6906,
+     "distintos_pct": 2.506,
+     "top": {
+      "6.62": 1550,
+      "16.04": 1016,
+      "27.13": 953,
+      "20.66": 901,
+      "20.40": 888,
+      "17.27": 846,
+      "20.71": 737,
+      "15.12": 727
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 8
+     },
+     "formas": {
+      "99.99": 73.79,
+      "9.99": 12.84,
+      "99,99": 10.04,
+      "9,99": 1.71,
+      "999.99": 1.32,
+      "999,99": 0.2
+     },
+     "formas_distintas": 8,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "total_item": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 7639,
+     "distintos_pct": 2.772,
+     "top": {
+      "56.85": 1704,
+      "64.35": 1545,
+      "75.80": 1524,
+      "37.90": 1502,
+      "85.80": 1385,
+      "42.90": 1301,
+      "50.85": 1271,
+      "55.35": 1252
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 10
+     },
+     "formas": {
+      "99.99": 47.4,
+      "999.99": 37.95,
+      "99,99": 6.48,
+      "999,99": 5.1,
+      "9999.99": 1.37,
+      "9.99": 1.1
+     },
+     "formas_distintas": 18,
+     "espacos_nas_bordas_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "item_pedido_id"
+    ],
+    "duplicadas": 1565,
+    "linhas_identicas": 1141
+   }
+  },
+  "pedidos": {
+   "linhas": 147658,
+   "colunas": {
+    "pedido_id": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 146847,
+     "distintos_pct": 99.451,
+     "top": {
+      "225": 2,
+      "498": 2,
+      "763": 2,
+      "840": 2,
+      "1040": 2,
+      "1548": 2,
+      "2131": 2,
+      "2248": 2
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 6
+     },
+     "formas": {
+      "99999": 61.17,
+      "999999": 32.04,
+      "9999": 6.11,
+      "999": 0.61,
+      "99": 0.06,
+      "9": 0.01
+     },
+     "formas_distintas": 6,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "numero_pedido": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 146847,
+     "distintos_pct": 99.451,
+     "top": {
+      "10225": 2,
+      "10498": 2,
+      "10763": 2,
+      "10840": 2,
+      "11040": 2,
+      "11548": 2,
+      "12131": 2,
+      "12248": 2
+     },
+     "comprimento": {
+      "min": 5,
+      "max": 6
+     },
+     "formas": {
+      "99999": 61.18,
+      "999999": 38.82
+     },
+     "formas_distintas": 2,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "cliente_id": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 50712,
+     "distintos_pct": 34.344,
+     "top": {
+      "21162": 87,
+      "51797": 53,
+      "6002": 52,
+      "32289": 50,
+      "9006": 45,
+      "14834": 41,
+      "51796": 41,
+      "51795": 41
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 5
+     },
+     "formas": {
+      "99999": 76.8,
+      "9999": 21.22,
+      "999": 1.75,
+      "99": 0.22,
+      "9": 0.02
+     },
+     "formas_distintas": 5,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "endereco_entrega_id": {
+     "tipo": "string",
+     "nulos": 4193,
+     "nulos_pct": 2.84,
+     "distintos": 50361,
+     "distintos_pct": 35.103,
+     "top": {
+      "23046": 85,
+      "6548": 50,
+      "9856": 45,
+      "16191": 41,
+      "21927": 40,
+      "3792": 39,
+      "16530": 39,
+      "3888": 38
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 7
+     },
+     "formas": {
+      "99999": 78.03,
+      "9999": 19.54,
+      "999": 1.62,
+      "99999.9": 0.46,
+      "99": 0.2,
+      "9999.9": 0.12
+     },
+     "formas_distintas": 8,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "cupom_id": {
+     "tipo": "string",
+     "nulos": 121959,
+     "nulos_pct": 82.596,
+     "distintos": 27,
+     "distintos_pct": 0.105,
+     "top": {
+      "1": 12557,
+      "13": 3741,
+      "12": 2164,
+      "14": 1444,
+      "15": 1350,
+      "8": 939,
+      "5": 559,
+      "2": 503
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 4
+     },
+     "formas": {
+      "9": 63.99,
+      "99": 35.38,
+      "9.9": 0.4,
+      "99.9": 0.23
+     },
+     "formas_distintas": 4,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "canal_venda": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.001,
+     "top": {
+      "site": 140264,
+      "whatsapp": 7394
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 8
+     },
+     "formas": {
+      "a+": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "status": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 6,
+     "distintos_pct": 0.004,
+     "top": {
+      "entregue": 134253,
+      "cancelado": 10272,
+      "devolvido": 1245,
+      "enviado": 1225,
+      "aguardando_pagamento": 361,
+      "pago": 302
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 20
+     },
+     "formas": {
+      "a+": 99.76,
+      "a+_a+": 0.24
+     },
+     "formas_distintas": 2,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "criado_em": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 146672,
+     "distintos_pct": 99.332,
+     "top": {
+      "2023-12-31 15:37:12": 3,
+      "2023-10-04 08:13:59": 2,
+      "2023-10-04 21:48:56": 2,
+      "2023-10-07 12:08:49": 2,
+      "2023-10-10 14:28:52": 2,
+      "2023-10-11 11:25:35": 2,
+      "2023-10-13 22:32:19": 2,
+      "2023-10-20 11:20:49": 2
+     },
+     "comprimento": {
+      "min": 19,
+      "max": 20
+     },
+     "formas": {
+      "9999-99-99 99:99:99": 88.9,
+      "9999-99-99A99:99:99A": 6.02,
+      "99/99/9999 99:99:99": 5.08
+     },
+     "formas_distintas": 3,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "pago_em": {
+     "tipo": "string",
+     "nulos": 10233,
+     "nulos_pct": 6.93,
+     "distintos": 136568,
+     "distintos_pct": 99.376,
+     "top": {
+      "2025-10-24 20:55:06": 3,
+      "2023-10-04 08:27:16": 2,
+      "2023-10-07 12:10:16": 2,
+      "2023-10-10 14:29:31": 2,
+      "2023-10-11 11:28:05": 2,
+      "2023-10-11 20:47:07": 2,
+      "2023-10-20 11:26:22": 2,
+      "2023-10-29 08:52:33": 2
+     },
+     "comprimento": {
+      "min": 19,
+      "max": 20
+     },
+     "formas": {
+      "9999-99-99 99:99:99": 88.92,
+      "9999-99-99A99:99:99A": 5.99,
+      "99/99/9999 99:99:99": 5.09
+     },
+     "formas_distintas": 3,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "cancelado_em": {
+     "tipo": "string",
+     "nulos": 137386,
+     "nulos_pct": 93.043,
+     "distintos": 10186,
+     "distintos_pct": 99.163,
+     "top": {
+      "2023-10-13 23:02:43": 2,
+      "27/10/2023 16:03:53": 2,
+      "2023-10-31 11:09:26": 2,
+      "2023-11-02 22:19:49": 2,
+      "2023-12-12 22:26:25": 2,
+      "2023-12-13 11:39:16": 2,
+      "2024-03-14 16:37:04": 2,
+      "2024-04-08 15:48:04": 2
+     },
+     "comprimento": {
+      "min": 19,
+      "max": 20
+     },
+     "formas": {
+      "9999-99-99 99:99:99": 88.66,
+      "9999-99-99A99:99:99A": 6.48,
+      "99/99/9999 99:99:99": 4.86
+     },
+     "formas_distintas": 3,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "ip_checkout": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 31021,
+     "distintos_pct": 21.009,
+     "top": {
+      "187.80.112.208": 197,
+      "201.154.178.250": 177,
+      "201.36.66.156": 176,
+      "189.145.197.103": 175,
+      "186.63.9.97": 174,
+      "201.112.100.64": 174,
+      "189.5.187.233": 172,
+      "201.172.140.44": 172
+     },
+     "comprimento": {
+      "min": 9,
+      "max": 15
+     },
+     "formas": {
+      "999.999.999.999": 21.89,
+      "999.999.999.99": 14.48,
+      "999.999.99.999": 14.16,
+      "999.99.999.999": 13.24,
+      "999.99.99.999": 7.27,
+      "999.99.999.99": 7.05
+     },
+     "formas_distintas": 30,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "subtotal": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 27118,
+     "distintos_pct": 18.365,
+     "top": {
+      "37.90": 456,
+      "75.80": 436,
+      "56.85": 417,
+      "55.35": 380,
+      "64.35": 368,
+      "42.90": 366,
+      "50.85": 359,
+      "67.80": 356
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 9
+     },
+     "formas": {
+      "999.99": 53.97,
+      "99.99": 29.62,
+      "999,99": 7.45,
+      "99,99": 4.01,
+      "9999.99": 3.66,
+      "9.99": 0.67
+     },
+     "formas_distintas": 11,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "desconto": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 8955,
+     "distintos_pct": 6.065,
+     "top": {
+      "0.00": 107667,
+      "0,00": 14765,
+      "5.00": 1254,
+      "5,00": 175,
+      "3.79": 73,
+      "6.44": 66,
+      "5.68": 66,
+      "5.98": 61
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 9
+     },
+     "formas": {
+      "9.99": 78.86,
+      "9,99": 10.82,
+      "99.99": 7.55,
+      "999.99": 1.4,
+      "99,99": 1.02,
+      "999,99": 0.21
+     },
+     "formas_distintas": 10,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "frete": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 10790,
+     "distintos_pct": 7.307,
+     "top": {
+      "0.00": 44944,
+      "0,00": 6172,
+      "12.66": 166,
+      "17.25": 139,
+      "17.09": 139,
+      "17.23": 138,
+      "17.04": 137,
+      "17.36": 136
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 8
+     },
+     "formas": {
+      "99.99": 56.88,
+      "9.99": 30.44,
+      "99,99": 7.8,
+      "9,99": 4.18,
+      "999.99": 0.42,
+      "9999.99": 0.21
+     },
+     "formas_distintas": 8,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "total": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 58868,
+     "distintos_pct": 39.868,
+     "top": {
+      "214.50": 64,
+      "202.05": 60,
+      "150.15": 53,
+      "211.05": 47,
+      "199.15": 45,
+      "227.40": 43,
+      "1.00": 43,
+      "257.40": 42
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 10
+     },
+     "formas": {
+      "999.99": 60.9,
+      "99.99": 22.95,
+      "999,99": 8.43,
+      "9999.99": 3.78,
+      "99,99": 3.06,
+      "9.999,99": 0.52
+     },
+     "formas_distintas": 20,
+     "espacos_nas_bordas_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "pedido_id"
+    ],
+    "duplicadas": 811,
+    "linhas_identicas": 588
+   }
+  },
+  "produtos": {
+   "linhas": 225,
+   "colunas": {
+    "produto_id": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 225,
+     "distintos_pct": 100.0,
+     "top": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 3
+     },
+     "formas": {
+      "999": 56.0,
+      "99": 40.0,
+      "9": 4.0
+     },
+     "formas_distintas": 3,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "sku_base": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 225,
+     "distintos_pct": 100.0,
+     "top": {
+      "TRI0001": 1,
+      "TRI0002": 1,
+      "TRI0003": 1,
+      "TRI0004": 1,
+      "TRI0005": 1,
+      "TRI0006": 1,
+      "TRI0007": 1,
+      "TRI0008": 1
+     },
+     "comprimento": {
+      "min": 7,
+      "max": 7
+     },
+     "formas": {
+      "A+9999": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "nome": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 220,
+     "distintos_pct": 97.778,
+     "top": {
+      "Linho Misto Liso Coleção Atelier": 3,
+      "Linho Puro Liso Coleção Atelier": 2,
+      "Viscolinho Liso Coleção Atelier": 2,
+      "Sarja Liso Linha Profissional": 2,
+      "Tricoline Liso Coleção Natural": 1,
+      "Tricoline Estampado Linha Profissional": 1,
+      "Tricoline Liso Coleção Festa": 1,
+      "Tricoline Estampado Coleção Infantil": 1
+     },
+     "comprimento": {
+      "min": 13,
+      "max": 45
+     },
+     "formas": {
+      "Aa+ Aa+ Aa+ Aa+": 47.56,
+      "Aa+ Aa+ Aa+": 13.78,
+      "Aa+ Aa+ Aa+ Aa+ Aa+": 13.78,
+      "Aa+ Aa+ Aa+ Aa+ AA": 8.44,
+      "Aa+ AA Aa+ Aa+ Aa+": 3.11,
+      "Aa+ 999% Aa+ Aa+ Aa+ Aa+": 3.11
+     },
+     "formas_distintas": 14,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "fornecedor_id": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 14,
+     "distintos_pct": 6.222,
+     "top": {
+      "9": 36,
+      "3": 22,
+      "1": 20,
+      "2": 17,
+      "5": 17,
+      "10": 17,
+      "13": 17,
+      "11": 16
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 2
+     },
+     "formas": {
+      "9": 68.0,
+      "99": 32.0
+     },
+     "formas_distintas": 2,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "composicao": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 15,
+     "distintos_pct": 6.667,
+     "top": {
+      "100% algodão": 76,
+      "100% viscose": 41,
+      "100% poliéster": 26,
+      "67% viscose 33% linho": 12,
+      "100% linho": 10,
+      "50% algodão 50% poliéster": 9,
+      "70% viscose 30% linho": 8,
+      "67% poliéster 33% viscose": 8
+     },
+     "comprimento": {
+      "min": 10,
+      "max": 26
+     },
+     "formas": {
+      "999% a+": 69.78,
+      "99% a+ 99% a+": 21.78,
+      "99% a+ 9% a+": 8.44
+     },
+     "formas_distintas": 3,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "largura_cm": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 16,
+     "distintos_pct": 7.111,
+     "top": {
+      "150": 47,
+      "145": 38,
+      "140": 28,
+      "160": 25,
+      "180": 19,
+      "170": 13,
+      "155": 12,
+      "130": 10
+     },
+     "comprimento": {
+      "min": 3,
+      "max": 3
+     },
+     "formas": {
+      "999": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "lancado_em": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 197,
+     "distintos_pct": 87.556,
+     "top": {
+      "2022-08-31": 3,
+      "2023-01-13": 3,
+      "2023-11-26": 2,
+      "2022-12-02": 2,
+      "2023-03-20": 2,
+      "2023-07-14": 2,
+      "2022-01-31": 2,
+      "2021-05-15": 2
+     },
+     "comprimento": {
+      "min": 10,
+      "max": 10
+     },
+     "formas": {
+      "9999-99-99": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "ativo": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.889,
+     "top": {
+      "1": 214,
+      "0": 11
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 1
+     },
+     "formas": {
+      "9": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "categoria": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 58,
+     "distintos_pct": 25.778,
+     "top": {
+      "Tricoline": 27,
+      "Viscose Estampada": 13,
+      "Linho Misto": 12,
+      "Viscose Lisa": 11,
+      "Chita": 10,
+      "Viscolinho": 10,
+      "Percal e Cretone": 9,
+      "Crepe": 9
+     },
+     "comprimento": {
+      "min": 2,
+      "max": 28
+     },
+     "formas": {
+      "Aa+": 44.0,
+      "Aa+ Aa+": 19.56,
+      "Aa+ a Aa+": 11.11,
+      "A+ A+": 3.56,
+      "Aa+ 999% Aa+": 3.56,
+      "Aa+ a+": 2.67
+     },
+     "formas_distintas": 20,
+     "espacos_nas_bordas_pct": 1.778
+    }
+   },
+   "chave": {
+    "colunas": [
+     "produto_id"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  },
+  "regioes": {
+   "linhas": 27,
+   "colunas": {
+    "uf": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 27,
+     "distintos_pct": 100.0,
+     "top": {
+      "SP": 1,
+      "RJ": 1,
+      "MG": 1,
+      "PR": 1,
+      "SC": 1,
+      "RS": 1,
+      "BA": 1,
+      "PE": 1
+     },
+     "comprimento": {
+      "min": 2,
+      "max": 2
+     },
+     "formas": {
+      "AA": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "nome": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 27,
+     "distintos_pct": 100.0,
+     "top": {
+      "São Paulo": 1,
+      "Rio de Janeiro": 1,
+      "Minas Gerais": 1,
+      "Paraná": 1,
+      "Santa Catarina": 1,
+      "Rio Grande do Sul": 1,
+      "Bahia": 1,
+      "Pernambuco": 1
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 19
+     },
+     "formas": {
+      "Aa+": 62.96,
+      "Aa+ Aa+": 18.52,
+      "Aáa Aa+": 3.7,
+      "Aaa aa Aa+": 3.7,
+      "Aaa Aa+ aa Aaa": 3.7,
+      "Aa+ Aa+ aa Aaa": 3.7
+     },
+     "formas_distintas": 7,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "macrorregiao": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 5,
+     "distintos_pct": 18.519,
+     "top": {
+      "Nordeste": 9,
+      "Norte": 7,
+      "Sudeste": 4,
+      "Centro-Oeste": 4,
+      "Sul": 3
+     },
+     "comprimento": {
+      "min": 3,
+      "max": 12
+     },
+     "formas": {
+      "Aa+": 74.07,
+      "Aa+-Aa+": 14.81,
+      "Aaa": 11.11
+     },
+     "formas_distintas": 3,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "sigla_macrorregiao": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 5,
+     "distintos_pct": 18.519,
+     "top": {
+      "NE": 9,
+      "N": 7,
+      "SE": 4,
+      "CO": 4,
+      "S": 3
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 2
+     },
+     "formas": {
+      "AA": 62.96,
+      "A": 37.04
+     },
+     "formas_distintas": 2,
+     "espacos_nas_bordas_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "uf"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  },
+  "variantes": {
+   "linhas": 2079,
+   "colunas": {
+    "variante_id": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2079,
+     "distintos_pct": 100.0,
+     "top": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 4
+     },
+     "formas": {
+      "9999": 51.95,
+      "999": 43.29,
+      "99": 4.33,
+      "9": 0.43
+     },
+     "formas_distintas": 4,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "produto_id": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 225,
+     "distintos_pct": 10.823,
+     "top": {
+      "7": 23,
+      "93": 23,
+      "139": 20,
+      "153": 20,
+      "223": 19,
+      "60": 18,
+      "83": 18,
+      "111": 18
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 3
+     },
+     "formas": {
+      "999": 58.01,
+      "99": 37.47,
+      "9": 4.52
+     },
+     "formas_distintas": 3,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "sku": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2079,
+     "distintos_pct": 100.0,
+     "top": {
+      "TRI0001-00001": 1,
+      "TRI0001-00002-R": 1,
+      "TRI0001-00003": 1,
+      "TRI0001-00004": 1,
+      "TRI0001-00005": 1,
+      "TRI0001-00006": 1,
+      "TRI0001-00007": 1,
+      "TRI0001-00008": 1
+     },
+     "comprimento": {
+      "min": 13,
+      "max": 15
+     },
+     "formas": {
+      "A+9999-99999": 83.36,
+      "A+9999-99999-A": 16.64
+     },
+     "formas_distintas": 2,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "cor": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 38,
+     "distintos_pct": 1.828,
+     "top": {
+      "Colorido": 189,
+      "Preto": 131,
+      "Off-White": 111,
+      "Branco": 101,
+      "Azul Marinho": 95,
+      "Cru": 81,
+      "Verde Militar": 78,
+      "Bege": 63
+     },
+     "comprimento": {
+      "min": 3,
+      "max": 14
+     },
+     "formas": {
+      "Aa+": 60.75,
+      "Aa+ Aa+": 28.04,
+      "Aaa-Aa+": 5.34,
+      "Aaa": 3.9,
+      "Aa+ a+": 1.97
+     },
+     "formas_distintas": 5,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "estampa": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 21,
+     "distintos_pct": 1.01,
+     "top": {
+      "Liso": 1699,
+      "Floral Pequeno": 38,
+      "Floral Grande": 37,
+      "Bandeirinhas Juninas": 33,
+      "Xadrez Vichy": 31,
+      "Infantil Ursinhos": 28,
+      "Poá": 26,
+      "Listrado": 25
+     },
+     "comprimento": {
+      "min": 3,
+      "max": 21
+     },
+     "formas": {
+      "Aa+": 87.49,
+      "Aa+ Aa+": 10.58,
+      "Aaá": 1.25,
+      "Aa+ Aa+ Aa+": 0.38,
+      "Aaa-Aaa": 0.29
+     },
+     "formas_distintas": 5,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "formato_venda": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.096,
+     "top": {
+      "metro": 1733,
+      "rolo": 346
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 5
+     },
+     "formas": {
+      "a+": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "metros_por_unidade": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 6,
+     "distintos_pct": 0.289,
+     "top": {
+      "1.00": 1514,
+      "50.00": 258,
+      "1,00": 219,
+      "25.00": 45,
+      "50,00": 34,
+      "25,00": 9
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 5
+     },
+     "formas": {
+      "9.99": 72.82,
+      "99.99": 14.57,
+      "9,99": 10.53,
+      "99,99": 2.07
+     },
+     "formas_distintas": 4,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "ativo": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.096,
+     "top": {
+      "1": 1996,
+      "0": 83
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 1
+     },
+     "formas": {
+      "9": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "criado_em": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 39,
+     "distintos_pct": 1.876,
+     "top": {
+      "2023-08-02": 1716,
+      "2023-08-16": 25,
+      "2023-11-26": 19,
+      "2024-09-19": 18,
+      "2026-01-31": 16,
+      "2024-01-09": 15,
+      "2024-04-05": 15,
+      "2024-10-19": 14
+     },
+     "comprimento": {
+      "min": 10,
+      "max": 10
+     },
+     "formas": {
+      "9999-99-99": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "preco_atual": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 293,
+     "distintos_pct": 14.093,
+     "top": {
+      "43.90": 83,
+      "36.90": 79,
+      "38.90": 64,
+      "34.90": 48,
+      "48.90": 47,
+      "40.90": 44,
+      "46.90": 44,
+      "56.90": 40
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 8
+     },
+     "formas": {
+      "99.99": 68.49,
+      "9999.99": 10.87,
+      "99,99": 10.25,
+      "999.99": 6.97,
+      "9.999,99": 1.44,
+      "9.99": 1.06
+     },
+     "formas_distintas": 7,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "custo_atual": {
+     "tipo": "string",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 1714,
+     "distintos_pct": 82.443,
+     "top": {
+      "5.39": 6,
+      "20.76": 5,
+      "19.70": 4,
+      "18.69": 4,
+      "19.25": 4,
+      "17.28": 4,
+      "20.11": 4,
+      "21.22": 4
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 8
+     },
+     "formas": {
+      "99.99": 63.06,
+      "999.99": 12.84,
+      "9.99": 9.76,
+      "99,99": 9.62,
+      "9999.99": 1.73,
+      "999,99": 1.59
+     },
+     "formas_distintas": 8,
+     "espacos_nas_bordas_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "variante_id"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  }
+ },
+ "relacionamentos": [
+  {
+   "filho": "categorias.categoria_pai_id",
+   "pai": "categorias.categoria_id",
+   "linhas_com_chave": 23,
+   "orfas": 0,
+   "orfas_pct": 0.0,
+   "cardinalidade": "N:1 (média 3.83 filhos por pai, máx 6)"
+  },
+  {
+   "filho": "variantes.produto_id",
+   "pai": "produtos.produto_id",
+   "linhas_com_chave": 2079,
+   "orfas": 0,
+   "orfas_pct": 0.0,
+   "cardinalidade": "N:1 (média 9.24 filhos por pai, máx 23)"
+  },
+  {
+   "filho": "enderecos.cliente_id",
+   "pai": "clientes.cliente_id",
+   "linhas_com_chave": 55684,
+   "orfas": 164,
+   "orfas_pct": 0.295,
+   "cardinalidade": "N:1 (média 1.09 filhos por pai, máx 2)"
+  },
+  {
+   "filho": "enderecos.uf",
+   "pai": "regioes.uf",
+   "linhas_com_chave": 55684,
+   "orfas": 1268,
+   "orfas_pct": 2.277,
+   "cardinalidade": "N:1 (média 431.66 filhos por pai, máx 15553)"
+  },
+  {
+   "filho": "pedidos.cliente_id",
+   "pai": "clientes.cliente_id",
+   "linhas_com_chave": 147658,
+   "orfas": 324,
+   "orfas_pct": 0.219,
+   "cardinalidade": "N:1 (média 2.91 filhos por pai, máx 87)"
+  },
+  {
+   "filho": "pedidos.endereco_entrega_id",
+   "pai": "enderecos.endereco_id",
+   "linhas_com_chave": 143465,
+   "orfas": 0,
+   "orfas_pct": 0.0,
+   "cardinalidade": "N:1 (média 2.85 filhos por pai, máx 85)"
+  },
+  {
+   "filho": "itens_pedido.pedido_id",
+   "pai": "pedidos.pedido_id",
+   "linhas_com_chave": 275625,
+   "orfas": 417,
+   "orfas_pct": 0.151,
+   "cardinalidade": "N:1 (média 1.87 filhos por pai, máx 16)"
+  },
+  {
+   "filho": "itens_pedido.variante_id",
+   "pai": "variantes.variante_id",
+   "linhas_com_chave": 275625,
+   "orfas": 0,
+   "orfas_pct": 0.0,
+   "cardinalidade": "N:1 (média 133.15 filhos por pai, máx 2579)"
+  },
+  {
+   "filho": "fretes.pedido_id",
+   "pai": "pedidos.pedido_id",
+   "linhas_com_chave": 147883,
+   "orfas": 223,
+   "orfas_pct": 0.151,
+   "cardinalidade": "N:1 (média 1.01 filhos por pai, máx 2)"
+  }
+ ]
+}

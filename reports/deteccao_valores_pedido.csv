@@ -1,0 +1,9 @@
+familia,tecnica,sinalizados,acertos,erros_existentes,precisao,recall,legitimos_derrubados,legitimos_total,legitimos_derrubados_pct,outros_sinalizados,nota,valor_legitimo_derrubado,distorcao_nao_detectada,distorcao_detectada
+estatística univariada,IQR global,34697,942,1022,0.027149321266968326,0.9217221135029354,2499,8994,0.2778519012675117,31256,"total, frete e desconto, cada um contra a base inteira",2578529.84,3156.25,2786819.15
+estatística univariada,z-score (média/desvio),908,542,1022,0.5969162995594713,0.5303326810176126,41,8994,0.004558594618634645,325,|z| > 3,1635001.26,121903.16,2668072.24
+estatística univariada,z robusto (MAD) global,13223,893,1022,0.06753384254707706,0.8737769080234834,891,8994,0.0990660440293529,11439,"|z| > 3,5 sobre mediana e MAD",2300912.59,5810.46,2784164.94
+estatística univariada,z robusto (MAD) por grupo,47606,749,1022,0.01573331092719405,0.7328767123287672,2107,8994,0.23426728930398044,44750,log(total) por tipo de cliente; log(frete) por serviço,2572707.0,18639.08,2771336.32
+multivariada,Isolation Forest,1456,560,1022,0.38461538461538464,0.547945205479452,142,8994,0.01578830331331999,754,"contaminação 1%; total, frete, peso, desconto, itens",1747021.2,230493.02,2559482.38
+regras,Regras de negócio,512,512,1022,1.0,0.5009784735812133,0,8994,0.0,0,desconto <= subtotal; total >= 0; frete do pedido = frete da transportadora,0.0,814834.65,1975140.75
+multivariada,Modelo frete x peso x UF (Huber + MAD),1693,733,1022,0.4329592439456586,0.7172211350293543,45,8994,0.005003335557038025,915,"resíduo robusto de log(frete) dado log(peso) e UF, por serviço",63165.07,909493.67,1880481.73
+combinação,Regras + modelo de frete (usado no ETL),1971,1011,1022,0.512937595129376,0.9892367906066536,45,8994,0.005003335557038025,915,o que o pipeline aplica,63165.07,2074.52,2787900.88

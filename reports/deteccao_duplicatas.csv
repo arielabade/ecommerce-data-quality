@@ -1,0 +1,5 @@
+familia,tecnica,sinalizados,acertos,erros_existentes,precisao,recall,legitimos_derrubados,legitimos_total,outros_sinalizados,nota,legitimos_derrubados_pct
+duplicatas,Hash exato do conteúdo,827,827,829,1.0,0.9975874547647768,0,8994,0,"mesma linha 2x (paginação, replay de lote)",
+duplicatas,"Janela de 10 min, sem olhar itens",1027,877,877,0.8539435248296008,1.0,0,8994,150,150 dos sinalizados são bots/testes (erro de outro tipo),0.0
+duplicatas,Janela de 10 min + itens iguais (usado no ETL),884,877,877,0.9920814479638009,1.0,0,8994,7,7 dos sinalizados são bots/testes (erro de outro tipo),0.0
+duplicatas,Janela de 2 h + itens iguais,884,877,877,0.9920814479638009,1.0,0,8994,7,7 dos sinalizados são bots/testes (erro de outro tipo),0.0

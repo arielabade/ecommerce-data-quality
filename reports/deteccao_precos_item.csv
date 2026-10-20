@@ -1,0 +1,7 @@
+familia,tecnica,sinalizados,acertos,erros_existentes,precisao,recall,legitimos_derrubados,legitimos_total,legitimos_derrubados_pct,outros_sinalizados,nota,valor_legitimo_derrubado,distorcao_nao_detectada,distorcao_detectada
+estatística univariada,IQR global (preço e quantidade),30974,1637,1768,0.052850778071931295,0.9259049773755657,127,1917,0.06624934793948878,29210,,1736617.35,6593.75,11717605.75
+estatística univariada,z-score (média/desvio),6130,672,1768,0.10962479608482871,0.38009049773755654,53,1917,0.02764736567553469,5405,,1312038.3,1056194.45,10668005.05
+estatística univariada,z robusto (MAD) global,30219,1220,1768,0.04037195142129124,0.6900452488687783,123,1917,0.06416275430359937,28876,,1736169.4,9214.6,11714984.9
+estatística univariada,z robusto (MAD) por variante,16487,1441,1768,0.08740219566931522,0.8150452488687783,42,1917,0.02190923317683881,15004,preço comparado com o mesmo SKU,115896.5,392204.35,11331995.15
+multivariada,Isolation Forest,2694,1495,1768,0.5549368968077208,0.8455882352941176,95,1917,0.0495565988523735,1104,,1718209.6,31815.65,11692383.85
+regras,Regras de negócio (usado no ETL),1768,1768,1768,1.0,1.0,0,1917,0.0,0,"preço > 0, quantidade > 0, preço entre 55% e 100% da tabela",0.0,0.0,11724199.5

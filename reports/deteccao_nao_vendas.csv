@@ -1,0 +1,5 @@
+familia,tecnica,sinalizados,acertos,erros_existentes,precisao,recall,legitimos_derrubados,legitimos_total,legitimos_derrubados_pct,outros_sinalizados,nota
+não-vendas,Regra de pedido de teste,118,117,117,0.9915254237288136,1.0,1,8994,0.000111185234600845,0,"conta interna ou total <= R$ 1,00"
+não-vendas,Velocidade por IP,157,157,157,1.0,1.0,0,8994,0.0,0,8+ pedidos do mesmo IP em 15 min
+não-vendas,Velocidade por cliente,157,157,157,1.0,1.0,0,8994,0.0,0,6+ pedidos da mesma conta em 15 min
+não-vendas,IP ou cliente (usado no ETL),157,157,157,1.0,1.0,0,8994,0.0,0,

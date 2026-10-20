@@ -1,0 +1,2254 @@
+{
+ "tabelas": {
+  "regioes": {
+   "linhas": 27,
+   "colunas": {
+    "uf": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 27,
+     "distintos_pct": 100.0,
+     "top": {
+      "SP": 1,
+      "RJ": 1,
+      "MG": 1,
+      "PR": 1,
+      "SC": 1,
+      "RS": 1,
+      "BA": 1,
+      "PE": 1
+     },
+     "comprimento": {
+      "min": 2,
+      "max": 2
+     },
+     "formas": {
+      "AA": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "nome": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 27,
+     "distintos_pct": 100.0,
+     "top": {
+      "São Paulo": 1,
+      "Rio de Janeiro": 1,
+      "Minas Gerais": 1,
+      "Paraná": 1,
+      "Santa Catarina": 1,
+      "Rio Grande do Sul": 1,
+      "Bahia": 1,
+      "Pernambuco": 1
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 19
+     },
+     "formas": {
+      "Aa+": 62.96,
+      "Aa+ Aa+": 18.52,
+      "Aáa Aa+": 3.7,
+      "Aaa aa Aa+": 3.7,
+      "Aaa Aa+ aa Aaa": 3.7,
+      "Aa+ Aa+ aa Aaa": 3.7
+     },
+     "formas_distintas": 7,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "macrorregiao": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 5,
+     "distintos_pct": 18.519,
+     "top": {
+      "Nordeste": 9,
+      "Norte": 7,
+      "Sudeste": 4,
+      "Centro-Oeste": 4,
+      "Sul": 3
+     },
+     "comprimento": {
+      "min": 3,
+      "max": 12
+     },
+     "formas": {
+      "Aa+": 74.07,
+      "Aa+-Aa+": 14.81,
+      "Aaa": 11.11
+     },
+     "formas_distintas": 3,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "sigla_macrorregiao": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 5,
+     "distintos_pct": 18.519,
+     "top": {
+      "NE": 9,
+      "N": 7,
+      "SE": 4,
+      "CO": 4,
+      "S": 3
+     },
+     "comprimento": {
+      "min": 1,
+      "max": 2
+     },
+     "formas": {
+      "AA": 62.96,
+      "A": 37.04
+     },
+     "formas_distintas": 2,
+     "espacos_nas_bordas_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "uf"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  },
+  "calendario_comercial": {
+   "linhas": 1109,
+   "colunas": {
+    "data": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 1109,
+     "distintos_pct": 100.0,
+     "top": {
+      "2023-10-01": 1,
+      "2023-10-02": 1,
+      "2023-10-03": 1,
+      "2023-10-04": 1,
+      "2023-10-05": 1,
+      "2023-10-06": 1,
+      "2023-10-07": 1,
+      "2023-10-08": 1
+     },
+     "comprimento": {
+      "min": 10,
+      "max": 10
+     },
+     "formas": {
+      "9999-99-99": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "dia_semana": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 7,
+     "distintos_pct": 0.631,
+     "min": 1.0,
+     "p01": 1.0,
+     "p25": 2.0,
+     "mediana": 4.0,
+     "p75": 6.0,
+     "p99": 7.0,
+     "max": 7.0,
+     "media": 3.9982,
+     "desvio": 2.0032,
+     "assimetria": 0.0018,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0,
+     "top": {
+      "7": 159,
+      "1": 159,
+      "2": 159,
+      "3": 158,
+      "4": 158,
+      "5": 158,
+      "6": 158
+     }
+    },
+    "feriado_nacional": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.18,
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 0.0,
+     "mediana": 0.0,
+     "p75": 0.0,
+     "p99": 1.0,
+     "max": 1.0,
+     "media": 0.0361,
+     "desvio": 0.1865,
+     "assimetria": 4.9829,
+     "fora_iqr_pct": 3.6069,
+     "zeros_pct": 96.3931,
+     "negativos_pct": 0.0,
+     "top": {
+      "0": 1069,
+      "1": 40
+     }
+    },
+    "nome_feriado": {
+     "tipo": "str",
+     "nulos": 1069,
+     "nulos_pct": 96.393,
+     "distintos": 12,
+     "distintos_pct": 30.0,
+     "top": {
+      "Carnaval": 6,
+      "Nossa Senhora Aparecida": 4,
+      "Finados": 3,
+      "Proclamação da República": 3,
+      "Dia da Consciência Negra": 3,
+      "Natal": 3,
+      "Confraternização Universal": 3,
+      "Sexta-feira Santa": 3
+     },
+     "comprimento": {
+      "min": 5,
+      "max": 26
+     },
+     "formas": {
+      "Aa+": 45.0,
+      "Aa+ Aa+": 15.0,
+      "Aa+ Aa+ Aa+": 10.0,
+      "Aa+ aa Aa+": 7.5,
+      "Aaa aa Aa+ Aa+": 7.5,
+      "Aa+-a+ Aa+": 7.5
+     },
+     "formas_distintas": 7,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "evento_comercial": {
+     "tipo": "str",
+     "nulos": 779,
+     "nulos_pct": 70.243,
+     "distintos": 10,
+     "distintos_pct": 3.03,
+     "top": {
+      "festa_junina": 105,
+      "natal": 51,
+      "volta_as_aulas": 42,
+      "black_friday": 33,
+      "dia_das_maes": 33,
+      "volta_as_aulas|carnaval": 24,
+      "carnaval": 18,
+      "dia_do_consumidor": 12
+     },
+     "comprimento": {
+      "min": 5,
+      "max": 23
+     },
+     "formas": {
+      "a+_a+": 41.82,
+      "a+": 20.91,
+      "a+_aa_a+": 19.09,
+      "a+_a+_a+": 10.0,
+      "a+_aa_a+|a+": 7.27,
+      "a+_a+|a+": 0.91
+     },
+     "formas_distintas": 6,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "promocao_loja": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.18,
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 0.0,
+     "mediana": 0.0,
+     "p75": 1.0,
+     "p99": 1.0,
+     "max": 1.0,
+     "media": 0.2813,
+     "desvio": 0.4499,
+     "assimetria": 0.9739,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 71.8665,
+     "negativos_pct": 0.0,
+     "top": {
+      "0": 797,
+      "1": 312
+     }
+    },
+    "nome_promocao": {
+     "tipo": "str",
+     "nulos": 797,
+     "nulos_pct": 71.867,
+     "distintos": 7,
+     "distintos_pct": 2.244,
+     "top": {
+      "Semana do Linho e da Viscose": 81,
+      "Liquidação de Malhas": 81,
+      "Queima Pós-Natal": 48,
+      "Black Friday": 39,
+      "Arraiá de Chitas": 36,
+      "Dia da Costureira": 15,
+      "Dia do Consumidor": 12
+     },
+     "comprimento": {
+      "min": 12,
+      "max": 28
+     },
+     "formas": {
+      "Aa+ aa Aa+": 37.5,
+      "Aa+ aa Aa+ a aa Aa+": 25.96,
+      "Aa+ Aáa-Aa+": 15.38,
+      "Aa+ Aa+": 12.5,
+      "Aaa aa Aa+": 8.65
+     },
+     "formas_distintas": 5,
+     "espacos_nas_bordas_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "data"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  },
+  "categorias": {
+   "linhas": 29,
+   "colunas": {
+    "categoria_id": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 29,
+     "distintos_pct": 100.0,
+     "min": 1.0,
+     "p01": 1.28,
+     "p25": 101.0,
+     "mediana": 108.0,
+     "p75": 115.0,
+     "p99": 121.72,
+     "max": 122.0,
+     "media": 88.7586,
+     "desvio": 44.7299,
+     "assimetria": -1.4584,
+     "fora_iqr_pct": 20.6897,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "categoria_pai_id": {
+     "tipo": "float64",
+     "nulos": 6,
+     "nulos_pct": 20.69,
+     "distintos": 6,
+     "distintos_pct": 26.087,
+     "min": 1.0,
+     "p01": 1.0,
+     "p25": 2.0,
+     "mediana": 4.0,
+     "p75": 5.0,
+     "p99": 6.0,
+     "max": 6.0,
+     "media": 3.5217,
+     "desvio": 1.6479,
+     "assimetria": -0.2756,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0,
+     "top": {
+      "5.0": 6,
+      "4.0": 5,
+      "1.0": 4,
+      "2.0": 3,
+      "3.0": 3,
+      "6.0": 2
+     }
+    },
+    "nome": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 29,
+     "distintos_pct": 100.0,
+     "top": {
+      "Algodão": 1,
+      "Linho": 1,
+      "Viscose": 1,
+      "Malha": 1,
+      "Sintéticos e Especiais": 1,
+      "Jeans e Sarja": 1,
+      "Tricoline": 1,
+      "Chita": 1
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 24
+     },
+     "formas": {
+      "Aa+": 51.72,
+      "Aa+ a Aa+": 20.69,
+      "Aa+ Aa+": 13.79,
+      "Aa+ Aaa a Aa+": 3.45,
+      "Aa+ AA": 3.45,
+      "Aa+ 999% Aa+": 3.45
+     },
+     "formas_distintas": 7,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "slug": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 29,
+     "distintos_pct": 100.0,
+     "top": {
+      "algodao": 1,
+      "linho": 1,
+      "viscose": 1,
+      "malha": 1,
+      "sinteticos-e-especiais": 1,
+      "jeans-e-sarja": 1,
+      "algodao-tricoline": 1,
+      "algodao-chita": 1
+     },
+     "comprimento": {
+      "min": 5,
+      "max": 47
+     },
+     "formas": {
+      "a+-a+": 24.14,
+      "a+": 13.79,
+      "a+-a+-a+": 13.79,
+      "a+-a-a+-a+": 13.79,
+      "a+-a-a+-a+-a-a+": 10.34,
+      "a+-a-a+": 6.9
+     },
+     "formas_distintas": 11,
+     "espacos_nas_bordas_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "categoria_id"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  },
+  "produtos": {
+   "linhas": 225,
+   "colunas": {
+    "produto_id": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 225,
+     "distintos_pct": 100.0,
+     "min": 1.0,
+     "p01": 3.24,
+     "p25": 57.0,
+     "mediana": 113.0,
+     "p75": 169.0,
+     "p99": 222.76,
+     "max": 225.0,
+     "media": 113.0,
+     "desvio": 65.0961,
+     "assimetria": 0.0,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "sku_base": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 225,
+     "distintos_pct": 100.0,
+     "top": {
+      "TRI0001": 1,
+      "TRI0002": 1,
+      "TRI0003": 1,
+      "TRI0004": 1,
+      "TRI0005": 1,
+      "TRI0006": 1,
+      "TRI0007": 1,
+      "TRI0008": 1
+     },
+     "comprimento": {
+      "min": 7,
+      "max": 7
+     },
+     "formas": {
+      "A+9999": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "nome": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 220,
+     "distintos_pct": 97.778,
+     "top": {
+      "Linho Misto Liso Coleção Atelier": 3,
+      "Linho Puro Liso Coleção Atelier": 2,
+      "Viscolinho Liso Coleção Atelier": 2,
+      "Sarja Liso Linha Profissional": 2,
+      "Tricoline Liso Coleção Natural": 1,
+      "Tricoline Estampado Linha Profissional": 1,
+      "Tricoline Liso Coleção Festa": 1,
+      "Tricoline Estampado Coleção Infantil": 1
+     },
+     "comprimento": {
+      "min": 13,
+      "max": 45
+     },
+     "formas": {
+      "Aa+ Aa+ Aa+ Aa+": 47.56,
+      "Aa+ Aa+ Aa+": 13.78,
+      "Aa+ Aa+ Aa+ Aa+ Aa+": 13.78,
+      "Aa+ Aa+ Aa+ Aa+ AA": 8.44,
+      "Aa+ AA Aa+ Aa+ Aa+": 3.11,
+      "Aa+ 999% Aa+ Aa+ Aa+ Aa+": 3.11
+     },
+     "formas_distintas": 14,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "categoria_id": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 23,
+     "distintos_pct": 10.222,
+     "min": 100.0,
+     "p01": 100.0,
+     "p25": 103.0,
+     "mediana": 108.0,
+     "p75": 113.0,
+     "p99": 122.0,
+     "max": 122.0,
+     "media": 108.3911,
+     "desvio": 6.6492,
+     "assimetria": 0.5111,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "fornecedor_id": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 14,
+     "distintos_pct": 6.222,
+     "min": 1.0,
+     "p01": 1.0,
+     "p25": 3.0,
+     "mediana": 8.0,
+     "p75": 10.0,
+     "p99": 14.0,
+     "max": 14.0,
+     "media": 7.2044,
+     "desvio": 4.0059,
+     "assimetria": -0.0429,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "composicao": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 15,
+     "distintos_pct": 6.667,
+     "top": {
+      "100% algodão": 76,
+      "100% viscose": 41,
+      "100% poliéster": 26,
+      "67% viscose 33% linho": 12,
+      "100% linho": 10,
+      "50% algodão 50% poliéster": 9,
+      "70% viscose 30% linho": 8,
+      "67% poliéster 33% viscose": 8
+     },
+     "comprimento": {
+      "min": 10,
+      "max": 26
+     },
+     "formas": {
+      "999% a+": 69.78,
+      "99% a+ 99% a+": 21.78,
+      "99% a+ 9% a+": 8.44
+     },
+     "formas_distintas": 3,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "largura_cm": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 16,
+     "distintos_pct": 7.111,
+     "min": 110.0,
+     "p01": 120.0,
+     "p25": 145.0,
+     "mediana": 150.0,
+     "p75": 160.0,
+     "p99": 250.0,
+     "max": 260.0,
+     "media": 157.5111,
+     "desvio": 28.2136,
+     "assimetria": 2.1145,
+     "fora_iqr_pct": 10.2222,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "lancado_em": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 197,
+     "distintos_pct": 87.556,
+     "top": {
+      "2022-08-31": 3,
+      "2023-01-13": 3,
+      "2023-11-26": 2,
+      "2022-12-02": 2,
+      "2023-03-20": 2,
+      "2023-07-14": 2,
+      "2022-01-31": 2,
+      "2021-05-15": 2
+     },
+     "comprimento": {
+      "min": 10,
+      "max": 10
+     },
+     "formas": {
+      "9999-99-99": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "ativo": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.889,
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 1.0,
+     "mediana": 1.0,
+     "p75": 1.0,
+     "p99": 1.0,
+     "max": 1.0,
+     "media": 0.9511,
+     "desvio": 0.2161,
+     "assimetria": -4.2121,
+     "fora_iqr_pct": 4.8889,
+     "zeros_pct": 4.8889,
+     "negativos_pct": 0.0,
+     "top": {
+      "1": 214,
+      "0": 11
+     }
+    }
+   },
+   "chave": {
+    "colunas": [
+     "produto_id"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  },
+  "variantes": {
+   "linhas": 2079,
+   "colunas": {
+    "variante_id": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2079,
+     "distintos_pct": 100.0,
+     "min": 1.0,
+     "p01": 21.78,
+     "p25": 520.5,
+     "mediana": 1040.0,
+     "p75": 1559.5,
+     "p99": 2058.22,
+     "max": 2079.0,
+     "media": 1040.0,
+     "desvio": 600.2999,
+     "assimetria": 0.0,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "produto_id": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 225,
+     "distintos_pct": 10.823,
+     "min": 1.0,
+     "p01": 3.0,
+     "p25": 63.0,
+     "mediana": 116.0,
+     "p75": 173.0,
+     "p99": 224.0,
+     "max": 225.0,
+     "media": 117.2088,
+     "desvio": 65.2755,
+     "assimetria": -0.0711,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "sku": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2079,
+     "distintos_pct": 100.0,
+     "top": {
+      "TRI0001-00001": 1,
+      "TRI0001-00002-R": 1,
+      "TRI0001-00003": 1,
+      "TRI0001-00004": 1,
+      "TRI0001-00005": 1,
+      "TRI0001-00006": 1,
+      "TRI0001-00007": 1,
+      "TRI0001-00008": 1
+     },
+     "comprimento": {
+      "min": 13,
+      "max": 15
+     },
+     "formas": {
+      "A+9999-99999": 83.36,
+      "A+9999-99999-A": 16.64
+     },
+     "formas_distintas": 2,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "cor": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 38,
+     "distintos_pct": 1.828,
+     "top": {
+      "Colorido": 189,
+      "Preto": 131,
+      "Off-White": 111,
+      "Branco": 101,
+      "Azul Marinho": 95,
+      "Cru": 81,
+      "Verde Militar": 78,
+      "Bege": 63
+     },
+     "comprimento": {
+      "min": 3,
+      "max": 14
+     },
+     "formas": {
+      "Aa+": 60.75,
+      "Aa+ Aa+": 28.04,
+      "Aaa-Aa+": 5.34,
+      "Aaa": 3.9,
+      "Aa+ a+": 1.97
+     },
+     "formas_distintas": 5,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "estampa": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 21,
+     "distintos_pct": 1.01,
+     "top": {
+      "Liso": 1699,
+      "Floral Pequeno": 38,
+      "Floral Grande": 37,
+      "Bandeirinhas Juninas": 33,
+      "Xadrez Vichy": 31,
+      "Infantil Ursinhos": 28,
+      "Poá": 26,
+      "Listrado": 25
+     },
+     "comprimento": {
+      "min": 3,
+      "max": 21
+     },
+     "formas": {
+      "Aa+": 87.49,
+      "Aa+ Aa+": 10.58,
+      "Aaá": 1.25,
+      "Aa+ Aa+ Aa+": 0.38,
+      "Aaa-Aaa": 0.29
+     },
+     "formas_distintas": 5,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "formato_venda": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.096,
+     "top": {
+      "metro": 1733,
+      "rolo": 346
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 5
+     },
+     "formas": {
+      "a+": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "metros_por_unidade": {
+     "tipo": "float64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 3,
+     "distintos_pct": 0.144,
+     "min": 1.0,
+     "p01": 1.0,
+     "p25": 1.0,
+     "mediana": 1.0,
+     "p75": 1.0,
+     "p99": 50.0,
+     "max": 50.0,
+     "media": 8.5055,
+     "desvio": 17.2045,
+     "assimetria": 1.9269,
+     "fora_iqr_pct": 16.6426,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0,
+     "top": {
+      "1.0": 1733,
+      "50.0": 292,
+      "25.0": 54
+     }
+    },
+    "preco_atual": {
+     "tipo": "float64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 199,
+     "distintos_pct": 9.572,
+     "min": 7.9,
+     "p01": 9.9,
+     "p25": 34.9,
+     "mediana": 43.9,
+     "p75": 66.9,
+     "p99": 2398.82,
+     "max": 3186.9,
+     "media": 279.2858,
+     "desvio": 583.186,
+     "assimetria": 2.5236,
+     "fora_iqr_pct": 18.9033,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "custo_atual": {
+     "tipo": "float64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 1630,
+     "distintos_pct": 78.403,
+     "min": 3.27,
+     "p01": 4.4978,
+     "p25": 15.615,
+     "mediana": 20.64,
+     "p75": 31.06,
+     "p99": 1116.4202,
+     "max": 1526.57,
+     "media": 129.0982,
+     "desvio": 269.573,
+     "assimetria": 2.5049,
+     "fora_iqr_pct": 18.9033,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "ativo": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.096,
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 1.0,
+     "mediana": 1.0,
+     "p75": 1.0,
+     "p99": 1.0,
+     "max": 1.0,
+     "media": 0.9601,
+     "desvio": 0.1958,
+     "assimetria": -4.7034,
+     "fora_iqr_pct": 3.9923,
+     "zeros_pct": 3.9923,
+     "negativos_pct": 0.0,
+     "top": {
+      "1": 1996,
+      "0": 83
+     }
+    },
+    "criado_em": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 39,
+     "distintos_pct": 1.876,
+     "top": {
+      "2023-08-02": 1716,
+      "2023-08-16": 25,
+      "2023-11-26": 19,
+      "2024-09-19": 18,
+      "2026-01-31": 16,
+      "2024-01-09": 15,
+      "2024-04-05": 15,
+      "2024-10-19": 14
+     },
+     "comprimento": {
+      "min": 10,
+      "max": 10
+     },
+     "formas": {
+      "9999-99-99": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "variante_id"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  },
+  "clientes": {
+   "linhas": 51179,
+   "colunas": {
+    "cliente_id": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 51179,
+     "distintos_pct": 100.0,
+     "min": 1.0,
+     "p01": 512.78,
+     "p25": 12795.5,
+     "mediana": 25590.0,
+     "p75": 38384.5,
+     "p99": 50667.22,
+     "max": 51179.0,
+     "media": 25590.0,
+     "desvio": 14774.2491,
+     "assimetria": 0.0,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "tipo_cliente": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 4,
+     "distintos_pct": 0.008,
+     "top": {
+      "hobby": 26415,
+      "costureira": 17751,
+      "atelie": 4999,
+      "confeccao": 2014
+     },
+     "comprimento": {
+      "min": 5,
+      "max": 10
+     },
+     "formas": {
+      "a+": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "tipo_pessoa": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.004,
+     "top": {
+      "PF": 46039,
+      "PJ": 5140
+     },
+     "comprimento": {
+      "min": 2,
+      "max": 2
+     },
+     "formas": {
+      "AA": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "nome": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 33636,
+     "distintos_pct": 65.722,
+     "top": {
+      "Larissa da Costa": 10,
+      "Vitória da Cunha": 9,
+      "Daniela Sampaio": 9,
+      "Maria Clara Sampaio": 9,
+      "Maria Nunes": 9,
+      "Sofia Nascimento": 8,
+      "Isadora Ribeiro": 8,
+      "Lívia Nunes": 8
+     },
+     "comprimento": {
+      "min": 6,
+      "max": 38
+     },
+     "formas": {
+      "Aa+ Aa+": 42.79,
+      "Aa+ Aa+ Aa+": 27.37,
+      "Aaa Aa+ Aa+": 4.42,
+      "Aa+ aa Aa+": 3.97,
+      "Aa+ Aa+ Aa+ Aa+": 3.96,
+      "Aa+ Aa+ aa Aa+": 2.36
+     },
+     "formas_distintas": 147,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "razao_social": {
+     "tipo": "str",
+     "nulos": 46039,
+     "nulos_pct": 89.957,
+     "distintos": 4214,
+     "distintos_pct": 81.984,
+     "top": {
+      "da Mata Confecções ME": 5,
+      "Pimenta Ajustes e Reformas ME": 5,
+      "Souza Costuras MEI": 5,
+      "Moda Erick ME": 4,
+      "Azevedo Ateliê MEI": 4,
+      "Pimenta Ateliê de Costura MEI": 4,
+      "Costuras Mariane EIRELI": 4,
+      "Pinto Costura Criativa Ltda": 4
+     },
+     "comprimento": {
+      "min": 11,
+      "max": 41
+     },
+     "formas": {
+      "Aa+ Aa+ A+": 24.65,
+      "Aa+ Aa+ Aa+": 12.96,
+      "Aa+ Aa+ AA": 12.59,
+      "Aa+ Aa+ Aa+ A+": 9.11,
+      "Aa+ Aa+ Aa+ Aa+": 5.39,
+      "Aa+ Aa+ Aa+ AA": 4.94
+     },
+     "formas_distintas": 119,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "email": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 51179,
+     "distintos_pct": 100.0,
+     "top": {
+      "mariacecilia.daluz@example.net": 1,
+      "manuella_vargas@email.test": 1,
+      "aviana@example.net": 1,
+      "melina60@example.net": 1,
+      "hadassa_casagrande@correio.example": 1,
+      "compras@alvesmodaautor.example": 1,
+      "AGARCIA@EXAMPLE.NET": 1,
+      "uniformesianeireli@uniformesianei.example": 1
+     },
+     "comprimento": {
+      "min": 14,
+      "max": 46
+     },
+     "formas": {
+      "a+@a+.a+": 33.59,
+      "a+_a+@a+.a+": 15.9,
+      "a+.a+@a+.a+": 15.81,
+      "a+99@a+.a+": 14.43,
+      "a+.a+9999@a+.a+": 8.78,
+      "a+.a+999@a+.a+": 7.78
+     },
+     "formas_distintas": 33,
+     "espacos_nas_bordas_pct": 0.457
+    },
+    "cadastrado_em": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 51174,
+     "distintos_pct": 99.99,
+     "top": {
+      "2022-12-12 09:06:00.000": 2,
+      "2023-06-20 00:58:00.000": 2,
+      "2023-08-13 07:24:00.000": 2,
+      "2022-09-13 02:22:00.000": 2,
+      "2022-04-10 20:34:00.000": 2,
+      "2023-08-04 18:15:00.000": 1,
+      "2022-01-10 00:29:00.000": 1,
+      "2021-12-24 18:45:00.000": 1
+     },
+     "comprimento": {
+      "min": 23,
+      "max": 23
+     },
+     "formas": {
+      "9999-99-99 99:99:99.999": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "origem_cadastro": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 4,
+     "distintos_pct": 0.008,
+     "top": {
+      "checkout": 41459,
+      "newsletter": 5717,
+      "importacao_legado": 3200,
+      "whatsapp": 803
+     },
+     "comprimento": {
+      "min": 8,
+      "max": 17
+     },
+     "formas": {
+      "a+": 93.75,
+      "a+_a+": 6.25
+     },
+     "formas_distintas": 2,
+     "espacos_nas_bordas_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "cliente_id"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  },
+  "enderecos": {
+   "linhas": 55684,
+   "colunas": {
+    "endereco_id": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 55684,
+     "distintos_pct": 100.0,
+     "min": 1.0,
+     "p01": 557.83,
+     "p25": 13921.75,
+     "mediana": 27842.5,
+     "p75": 41763.25,
+     "p99": 55127.17,
+     "max": 55684.0,
+     "media": 27842.5,
+     "desvio": 16074.7305,
+     "assimetria": -0.0,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "cliente_id": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 51178,
+     "distintos_pct": 91.908,
+     "min": 1.0,
+     "p01": 510.83,
+     "p25": 12732.0,
+     "mediana": 25558.5,
+     "p75": 38320.25,
+     "p99": 50669.17,
+     "max": 51178.0,
+     "media": 25555.5167,
+     "desvio": 14771.0042,
+     "assimetria": 0.0017,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "tipo": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.004,
+     "top": {
+      "entrega": 53400,
+      "cobranca": 2284
+     },
+     "comprimento": {
+      "min": 7,
+      "max": 8
+     },
+     "formas": {
+      "a+": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "cep": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 55673,
+     "distintos_pct": 99.98,
+     "top": {
+      "76193-639": 2,
+      "08377-731": 2,
+      "29584-067": 2,
+      "07749-186": 2,
+      "60519-432": 2,
+      "22381-624": 2,
+      "36540-773": 2,
+      "69312-934": 2
+     },
+     "comprimento": {
+      "min": 8,
+      "max": 9
+     },
+     "formas": {
+      "99999-999": 87.95,
+      "99999999": 12.05
+     },
+     "formas_distintas": 2,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "bairro": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 482,
+     "distintos_pct": 0.866,
+     "top": {
+      "Belvedere": 142,
+      "Ventosa": 142,
+      "Conjunto Taquaril": 142,
+      "São Bento": 141,
+      "Vila São Francisco": 141,
+      "Penha": 140,
+      "Santa Maria": 139,
+      "São Jorge 3ª Seção": 138
+     },
+     "comprimento": {
+      "min": 3,
+      "max": 33
+     },
+     "formas": {
+      "Aa+": 32.93,
+      "Aa+ Aa+": 29.36,
+      "Aa+ Aa+ Aa+": 5.4,
+      "Aáa Aa+": 4.4,
+      "Aa+ Aa Aa+": 3.99,
+      "Aa+ Aa+ Aa+ 9a Aa+": 2.51
+     },
+     "formas_distintas": 44,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "cidade": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 215,
+     "distintos_pct": 0.386,
+     "top": {
+      "São Paulo": 8511,
+      "Rio de Janeiro": 4262,
+      "Belo Horizonte": 2853,
+      "Curitiba": 1881,
+      "Salvador": 1808,
+      "Porto Alegre": 1576,
+      "Brasília": 1556,
+      "Fortaleza": 1394
+     },
+     "comprimento": {
+      "min": 5,
+      "max": 23
+     },
+     "formas": {
+      "Aa+": 50.06,
+      "Aa+ Aa+": 16.04,
+      "Aáa Aa+": 16.02,
+      "Aaa aa Aa+": 7.65,
+      "Aa+ aa Aa+": 4.14,
+      "Aaa Aa+": 1.07
+     },
+     "formas_distintas": 32,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "uf": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 27,
+     "distintos_pct": 0.048,
+     "top": {
+      "SP": 16045,
+      "RJ": 6595,
+      "MG": 5654,
+      "PR": 3607,
+      "RS": 2985,
+      "BA": 2774,
+      "SC": 2729,
+      "PE": 2105
+     },
+     "comprimento": {
+      "min": 2,
+      "max": 2
+     },
+     "formas": {
+      "AA": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "principal": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.004,
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 1.0,
+     "mediana": 1.0,
+     "p75": 1.0,
+     "p99": 1.0,
+     "max": 1.0,
+     "media": 0.9191,
+     "desvio": 0.2727,
+     "assimetria": -3.0735,
+     "fora_iqr_pct": 8.0921,
+     "zeros_pct": 8.0921,
+     "negativos_pct": 0.0,
+     "top": {
+      "1": 51178,
+      "0": 4506
+     }
+    },
+    "criado_em": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 51173,
+     "distintos_pct": 91.899,
+     "top": {
+      "2023-08-13 07:24:00.000": 3,
+      "2022-01-10 00:29:00.000": 2,
+      "2021-12-24 18:45:00.000": 2,
+      "2022-05-03 06:58:00.000": 2,
+      "2023-01-08 19:51:00.000": 2,
+      "2023-01-02 16:31:00.000": 2,
+      "2022-01-04 02:08:00.000": 2,
+      "2023-04-25 18:40:00.000": 2
+     },
+     "comprimento": {
+      "min": 23,
+      "max": 23
+     },
+     "formas": {
+      "9999-99-99 99:99:99.999": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "endereco_id"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  },
+  "pedidos": {
+   "linhas": 144583,
+   "colunas": {
+    "pedido_id": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 144583,
+     "distintos_pct": 100.0,
+     "min": 1.0,
+     "p01": 1446.82,
+     "p25": 36146.5,
+     "mediana": 72292.0,
+     "p75": 108437.5,
+     "p99": 143137.18,
+     "max": 144583.0,
+     "media": 72292.0,
+     "desvio": 41737.6613,
+     "assimetria": 0.0,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "numero_pedido": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 144583,
+     "distintos_pct": 100.0,
+     "min": 10001.0,
+     "p01": 11446.82,
+     "p25": 46146.5,
+     "mediana": 82292.0,
+     "p75": 118437.5,
+     "p99": 153137.18,
+     "max": 154583.0,
+     "media": 82292.0,
+     "desvio": 41737.6613,
+     "assimetria": 0.0,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "cliente_id": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 50094,
+     "distintos_pct": 34.647,
+     "min": 1.0,
+     "p01": 519.0,
+     "p25": 10610.0,
+     "mediana": 21525.0,
+     "p75": 33390.0,
+     "p99": 49845.18,
+     "max": 51179.0,
+     "media": 22453.7246,
+     "desvio": 13716.7033,
+     "assimetria": 0.2158,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "endereco_entrega_id": {
+     "tipo": "float64",
+     "nulos": 3864,
+     "nulos_pct": 2.673,
+     "distintos": 49511,
+     "distintos_pct": 35.184,
+     "min": 1.0,
+     "p01": 569.36,
+     "p25": 11580.0,
+     "mediana": 23432.0,
+     "p75": 36370.5,
+     "p99": 54230.82,
+     "max": 55684.0,
+     "media": 24461.4189,
+     "desvio": 14929.811,
+     "assimetria": 0.2144,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "cupom_id": {
+     "tipo": "float64",
+     "nulos": 119152,
+     "nulos_pct": 82.411,
+     "distintos": 15,
+     "distintos_pct": 0.059,
+     "min": 1.0,
+     "p01": 1.0,
+     "p25": 1.0,
+     "mediana": 2.0,
+     "p75": 13.0,
+     "p99": 15.0,
+     "max": 15.0,
+     "media": 6.0353,
+     "desvio": 5.6153,
+     "assimetria": 0.4033,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "canal_venda": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.001,
+     "top": {
+      "site": 137266,
+      "whatsapp": 7317
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 8
+     },
+     "formas": {
+      "a+": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "status": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 6,
+     "distintos_pct": 0.004,
+     "top": {
+      "entregue": 132006,
+      "cancelado": 9898,
+      "devolvido": 1231,
+      "enviado": 1208,
+      "pago": 232,
+      "aguardando_pagamento": 8
+     },
+     "comprimento": {
+      "min": 4,
+      "max": 20
+     },
+     "formas": {
+      "a+": 99.99,
+      "a+_a+": 0.01
+     },
+     "formas_distintas": 2,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "criado_em": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 144386,
+     "distintos_pct": 99.864,
+     "top": {
+      "2023-12-31 15:37:12.000": 3,
+      "2023-10-04 21:48:56.000": 2,
+      "2023-11-11 09:11:20.000": 2,
+      "2023-11-21 13:21:18.000": 2,
+      "2023-11-24 13:15:52.000": 2,
+      "2023-11-24 19:09:56.000": 2,
+      "2023-11-26 19:58:12.000": 2,
+      "2023-11-30 21:58:45.000": 2
+     },
+     "comprimento": {
+      "min": 23,
+      "max": 23
+     },
+     "formas": {
+      "9999-99-99 99:99:99.999": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "pago_em": {
+     "tipo": "str",
+     "nulos": 9511,
+     "nulos_pct": 6.578,
+     "distintos": 135025,
+     "distintos_pct": 99.965,
+     "top": {
+      "2023-12-12 22:14:11.000": 2,
+      "2023-12-19 20:49:24.000": 2,
+      "2024-05-28 12:53:15.000": 2,
+      "2024-05-29 17:16:44.000": 2,
+      "2024-07-09 17:28:53.000": 2,
+      "2024-07-25 14:48:15.000": 2,
+      "2024-07-29 20:58:51.000": 2,
+      "2024-08-11 11:31:19.000": 2
+     },
+     "comprimento": {
+      "min": 23,
+      "max": 23
+     },
+     "formas": {
+      "9999-99-99 99:99:99.999": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "cancelado_em": {
+     "tipo": "str",
+     "nulos": 134685,
+     "nulos_pct": 93.154,
+     "distintos": 9898,
+     "distintos_pct": 100.0,
+     "top": {
+      "2023-10-01 10:07:34.000": 1,
+      "2023-10-01 14:04:52.751": 1,
+      "2023-10-02 12:17:58.375": 1,
+      "2023-10-02 21:45:03.000": 1,
+      "2023-10-02 22:41:32.219": 1,
+      "2023-10-03 12:59:18.691": 1,
+      "2023-10-03 18:00:26.572": 1,
+      "2023-10-03 21:41:14.000": 1
+     },
+     "comprimento": {
+      "min": 23,
+      "max": 23
+     },
+     "formas": {
+      "9999-99-99 99:99:99.999": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "subtotal": {
+     "tipo": "float64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 20931,
+     "distintos_pct": 14.477,
+     "min": 2.45,
+     "p01": 11.9,
+     "p25": 74.8,
+     "mediana": 156.95,
+     "p75": 317.1,
+     "p99": 2162.589,
+     "max": 8240.35,
+     "media": 278.323,
+     "desvio": 415.3621,
+     "assimetria": 5.2351,
+     "fora_iqr_pct": 7.6842,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "desconto": {
+     "tipo": "float64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 7430,
+     "distintos_pct": 5.139,
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 0.0,
+     "mediana": 0.0,
+     "p75": 0.0,
+     "p99": 145.1318,
+     "max": 1307.06,
+     "media": 5.9657,
+     "desvio": 27.8895,
+     "assimetria": 9.7904,
+     "fora_iqr_pct": 17.2531,
+     "zeros_pct": 82.7469,
+     "negativos_pct": 0.0
+    },
+    "frete": {
+     "tipo": "float64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 7020,
+     "distintos_pct": 4.855,
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 0.0,
+     "mediana": 17.58,
+     "p75": 28.69,
+     "p99": 75.4536,
+     "max": 767.41,
+     "media": 18.5313,
+     "desvio": 19.2508,
+     "assimetria": 3.2886,
+     "fora_iqr_pct": 1.2062,
+     "zeros_pct": 34.8824,
+     "negativos_pct": 0.0
+    },
+    "total": {
+     "tipo": "float64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 46868,
+     "distintos_pct": 32.416,
+     "min": 1.0,
+     "p01": 30.1082,
+     "p25": 97.625,
+     "mediana": 175.45,
+     "p75": 322.09,
+     "p99": 2088.2528,
+     "max": 8240.35,
+     "media": 290.8886,
+     "desvio": 399.1304,
+     "assimetria": 5.2551,
+     "fora_iqr_pct": 8.1358,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "pedido_teste": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.001,
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 0.0,
+     "mediana": 0.0,
+     "p75": 0.0,
+     "p99": 0.0,
+     "max": 1.0,
+     "media": 0.0001,
+     "desvio": 0.0091,
+     "assimetria": 109.7535,
+     "fora_iqr_pct": 0.0083,
+     "zeros_pct": 99.9917,
+     "negativos_pct": 0.0,
+     "top": {
+      "0": 144571,
+      "1": 12
+     }
+    }
+   },
+   "chave": {
+    "colunas": [
+     "pedido_id"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  },
+  "itens_pedido": {
+   "linhas": 270242,
+   "colunas": {
+    "item_pedido_id": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 270242,
+     "distintos_pct": 100.0,
+     "min": 1.0,
+     "p01": 2703.41,
+     "p25": 67561.25,
+     "mediana": 135121.5,
+     "p75": 202681.75,
+     "p99": 267539.59,
+     "max": 270242.0,
+     "media": 135121.5,
+     "desvio": 78012.2901,
+     "assimetria": 0.0,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "pedido_id": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 144583,
+     "distintos_pct": 53.501,
+     "min": 1.0,
+     "p01": 1374.41,
+     "p25": 36138.0,
+     "mediana": 72443.5,
+     "p75": 108307.0,
+     "p99": 143159.0,
+     "max": 144583.0,
+     "media": 72286.785,
+     "desvio": 41740.173,
+     "assimetria": -0.0022,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "variante_id": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2068,
+     "distintos_pct": 0.765,
+     "min": 1.0,
+     "p01": 20.0,
+     "p25": 482.0,
+     "mediana": 932.0,
+     "p75": 1412.0,
+     "p99": 2034.0,
+     "max": 2079.0,
+     "media": 965.0607,
+     "desvio": 592.0535,
+     "assimetria": 0.1285,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "quantidade": {
+     "tipo": "float64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 96,
+     "distintos_pct": 0.036,
+     "min": 0.5,
+     "p01": 0.5,
+     "p25": 1.5,
+     "mediana": 2.5,
+     "p75": 4.0,
+     "p99": 14.5,
+     "max": 66.5,
+     "media": 3.1477,
+     "desvio": 2.8614,
+     "assimetria": 3.4098,
+     "fora_iqr_pct": 6.0638,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "preco_unitario": {
+     "tipo": "float64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 773,
+     "distintos_pct": 0.286,
+     "min": 4.9,
+     "p01": 8.9,
+     "p25": 29.9,
+     "mediana": 38.9,
+     "p75": 48.9,
+     "p99": 1135.9,
+     "max": 3186.9,
+     "media": 61.4033,
+     "desvio": 178.2644,
+     "assimetria": 9.1697,
+     "fora_iqr_pct": 4.8531,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "preco_tabela": {
+     "tipo": "float64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 548,
+     "distintos_pct": 0.203,
+     "min": 6.9,
+     "p01": 9.9,
+     "p25": 30.9,
+     "mediana": 39.9,
+     "p75": 48.9,
+     "p99": 1189.9,
+     "max": 3186.9,
+     "media": 62.6132,
+     "desvio": 181.0718,
+     "assimetria": 9.1003,
+     "fora_iqr_pct": 4.9863,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "custo_unitario": {
+     "tipo": "float64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 3980,
+     "distintos_pct": 1.473,
+     "min": 2.71,
+     "p01": 4.08,
+     "p25": 13.89,
+     "mediana": 18.22,
+     "p75": 22.41,
+     "p99": 528.8185,
+     "max": 1394.73,
+     "media": 28.4482,
+     "desvio": 82.2188,
+     "assimetria": 9.1042,
+     "fora_iqr_pct": 5.434,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "total_item": {
+     "tipo": "float64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 4485,
+     "distintos_pct": 1.66,
+     "min": 2.45,
+     "p01": 9.9,
+     "p25": 48.9,
+     "mediana": 89.7,
+     "p75": 161.7,
+     "p99": 1288.777,
+     "max": 7133.7,
+     "media": 148.9064,
+     "desvio": 237.9641,
+     "assimetria": 7.3431,
+     "fora_iqr_pct": 7.7967,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "item_pedido_id"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  },
+  "fretes": {
+   "linhas": 144583,
+   "colunas": {
+    "frete_id": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 144583,
+     "distintos_pct": 100.0,
+     "min": 1.0,
+     "p01": 1446.82,
+     "p25": 36146.5,
+     "mediana": 72292.0,
+     "p75": 108437.5,
+     "p99": 143137.18,
+     "max": 144583.0,
+     "media": 72292.0,
+     "desvio": 41737.6613,
+     "assimetria": 0.0,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "pedido_id": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 144583,
+     "distintos_pct": 100.0,
+     "min": 1.0,
+     "p01": 1446.82,
+     "p25": 36146.5,
+     "mediana": 72292.0,
+     "p75": 108437.5,
+     "p99": 143137.18,
+     "max": 144583.0,
+     "media": 72292.0,
+     "desvio": 41737.6613,
+     "assimetria": 0.0,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "transportadora": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 4,
+     "distintos_pct": 0.003,
+     "top": {
+      "Correios": 101100,
+      "Jadlog": 32242,
+      "Loggi": 7377,
+      "Retirada na loja": 3864
+     },
+     "comprimento": {
+      "min": 5,
+      "max": 16
+     },
+     "formas": {
+      "Aa+": 97.33,
+      "Aa+ aa a+": 2.67
+     },
+     "formas_distintas": 2,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "servico": {
+     "tipo": "str",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 5,
+     "distintos_pct": 0.003,
+     "top": {
+      "PAC": 77605,
+      "Jadlog .Package": 32242,
+      "SEDEX": 23495,
+      "Loggi Expresso": 7377,
+      "Retirada": 3864
+     },
+     "comprimento": {
+      "min": 3,
+      "max": 15
+     },
+     "formas": {
+      "A+": 69.93,
+      "Aa+ .Aa+": 22.3,
+      "Aa+ Aa+": 5.1,
+      "Aa+": 2.67
+     },
+     "formas_distintas": 4,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "peso_kg": {
+     "tipo": "float64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 10936,
+     "distintos_pct": 7.564,
+     "min": 0.1,
+     "p01": 0.241,
+     "p25": 0.618,
+     "mediana": 1.11,
+     "p75": 2.072,
+     "p99": 17.4851,
+     "max": 89.736,
+     "media": 2.0293,
+     "desvio": 3.5441,
+     "assimetria": 7.5745,
+     "fora_iqr_pct": 8.3848,
+     "zeros_pct": 0.0,
+     "negativos_pct": 0.0
+    },
+    "valor_cobrado": {
+     "tipo": "float64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 7020,
+     "distintos_pct": 4.855,
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 0.0,
+     "mediana": 17.58,
+     "p75": 28.69,
+     "p99": 75.4536,
+     "max": 767.41,
+     "media": 18.5313,
+     "desvio": 19.2508,
+     "assimetria": 3.2886,
+     "fora_iqr_pct": 1.2062,
+     "zeros_pct": 34.8824,
+     "negativos_pct": 0.0
+    },
+    "custo_real": {
+     "tipo": "float64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 7778,
+     "distintos_pct": 5.38,
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 16.86,
+     "mediana": 21.35,
+     "p75": 30.28,
+     "p99": 84.8154,
+     "max": 701.22,
+     "media": 25.7767,
+     "desvio": 16.5318,
+     "assimetria": 5.3511,
+     "fora_iqr_pct": 5.6625,
+     "zeros_pct": 2.6725,
+     "negativos_pct": 0.0
+    },
+    "frete_gratis": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 2,
+     "distintos_pct": 0.001,
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 0.0,
+     "mediana": 0.0,
+     "p75": 1.0,
+     "p99": 1.0,
+     "max": 1.0,
+     "media": 0.3488,
+     "desvio": 0.4766,
+     "assimetria": 0.6344,
+     "fora_iqr_pct": 0.0,
+     "zeros_pct": 65.1176,
+     "negativos_pct": 0.0,
+     "top": {
+      "0": 94149,
+      "1": 50434
+     }
+    },
+    "prazo_estimado_dias": {
+     "tipo": "int64",
+     "nulos": 0,
+     "nulos_pct": 0.0,
+     "distintos": 14,
+     "distintos_pct": 0.01,
+     "min": 0.0,
+     "p01": 0.0,
+     "p25": 5.0,
+     "mediana": 6.0,
+     "p75": 8.0,
+     "p99": 13.0,
+     "max": 14.0,
+     "media": 6.2101,
+     "desvio": 2.645,
+     "assimetria": 0.2929,
+     "fora_iqr_pct": 4.7018,
+     "zeros_pct": 2.6725,
+     "negativos_pct": 0.0
+    },
+    "postado_em": {
+     "tipo": "str",
+     "nulos": 13734,
+     "nulos_pct": 9.499,
+     "distintos": 130070,
+     "distintos_pct": 99.405,
+     "top": {
+      "2024-09-23 15:21:54": 3,
+      "2024-11-26 17:15:43": 3,
+      "2025-01-20 14:56:30": 3,
+      "2026-07-06 14:10:30": 3,
+      "2023-10-09 16:27:56": 2,
+      "2023-10-06 15:32:35": 2,
+      "2023-10-11 15:47:30": 2,
+      "2023-10-16 15:20:08": 2
+     },
+     "comprimento": {
+      "min": 19,
+      "max": 19
+     },
+     "formas": {
+      "9999-99-99 99:99:99": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    },
+    "entregue_em": {
+     "tipo": "str",
+     "nulos": 14029,
+     "nulos_pct": 9.703,
+     "distintos": 130327,
+     "distintos_pct": 99.826,
+     "top": {
+      "2023-10-31 13:40:29": 2,
+      "2023-11-12 11:02:39": 2,
+      "2023-11-25 09:01:41": 2,
+      "2023-11-22 18:57:52": 2,
+      "2023-11-29 09:31:18": 2,
+      "2023-12-02 13:25:59": 2,
+      "2023-12-09 15:51:50": 2,
+      "2023-12-15 17:57:39": 2
+     },
+     "comprimento": {
+      "min": 19,
+      "max": 19
+     },
+     "formas": {
+      "9999-99-99 99:99:99": 100.0
+     },
+     "formas_distintas": 1,
+     "espacos_nas_bordas_pct": 0.0
+    }
+   },
+   "chave": {
+    "colunas": [
+     "frete_id"
+    ],
+    "duplicadas": 0,
+    "linhas_identicas": 0
+   }
+  }
+ },
+ "relacionamentos": [
+  {
+   "filho": "categorias.categoria_pai_id",
+   "pai": "categorias.categoria_id",
+   "linhas_com_chave": 23,
+   "orfas": 0,
+   "orfas_pct": 0.0,
+   "cardinalidade": "N:1 (média 3.83 filhos por pai, máx 6)"
+  },
+  {
+   "filho": "produtos.categoria_id",
+   "pai": "categorias.categoria_id",
+   "linhas_com_chave": 225,
+   "orfas": 0,
+   "orfas_pct": 0.0,
+   "cardinalidade": "N:1 (média 9.78 filhos por pai, máx 34)"
+  },
+  {
+   "filho": "variantes.produto_id",
+   "pai": "produtos.produto_id",
+   "linhas_com_chave": 2079,
+   "orfas": 0,
+   "orfas_pct": 0.0,
+   "cardinalidade": "N:1 (média 9.24 filhos por pai, máx 23)"
+  },
+  {
+   "filho": "enderecos.cliente_id",
+   "pai": "clientes.cliente_id",
+   "linhas_com_chave": 55684,
+   "orfas": 0,
+   "orfas_pct": 0.0,
+   "cardinalidade": "N:1 (média 1.09 filhos por pai, máx 2)"
+  },
+  {
+   "filho": "enderecos.uf",
+   "pai": "regioes.uf",
+   "linhas_com_chave": 55684,
+   "orfas": 0,
+   "orfas_pct": 0.0,
+   "cardinalidade": "N:1 (média 2062.37 filhos por pai, máx 16045)"
+  },
+  {
+   "filho": "pedidos.cliente_id",
+   "pai": "clientes.cliente_id",
+   "linhas_com_chave": 144583,
+   "orfas": 0,
+   "orfas_pct": 0.0,
+   "cardinalidade": "N:1 (média 2.89 filhos por pai, máx 52)"
+  },
+  {
+   "filho": "pedidos.endereco_entrega_id",
+   "pai": "enderecos.endereco_id",
+   "linhas_com_chave": 140719,
+   "orfas": 0,
+   "orfas_pct": 0.0,
+   "cardinalidade": "N:1 (média 2.84 filhos por pai, máx 52)"
+  },
+  {
+   "filho": "itens_pedido.pedido_id",
+   "pai": "pedidos.pedido_id",
+   "linhas_com_chave": 270242,
+   "orfas": 0,
+   "orfas_pct": 0.0,
+   "cardinalidade": "N:1 (média 1.87 filhos por pai, máx 9)"
+  },
+  {
+   "filho": "itens_pedido.variante_id",
+   "pai": "variantes.variante_id",
+   "linhas_com_chave": 270242,
+   "orfas": 0,
+   "orfas_pct": 0.0,
+   "cardinalidade": "N:1 (média 130.68 filhos por pai, máx 2555)"
+  },
+  {
+   "filho": "fretes.pedido_id",
+   "pai": "pedidos.pedido_id",
+   "linhas_com_chave": 144583,
+   "orfas": 0,
+   "orfas_pct": 0.0,
+   "cardinalidade": "N:1 (único)"
+  }
+ ]
+}
