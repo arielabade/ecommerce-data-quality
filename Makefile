@@ -16,9 +16,11 @@ install:            ## ambiente virtual com as dependências
 source:             ## (opcional) regera a base de origem do zero no repositório ../ecommerce
 	$(MAKE) -C $(ECOMMERCE_DIR) dados recarregar
 
-data:               ## sobe o MySQL de origem (só leitura), extrai as tabelas e faz o perfil
+data:               ## sobe o MySQL de origem (só leitura), extrai as tabelas e faz o perfil (DQ_SOURCE_KIND=csv lê os CSVs da origem)
 ifeq ($(DQ_PROFILE),default)
+ifeq ($(filter csv parquet,$(DQ_SOURCE_KIND)),)
 	$(COMPOSE) up -d --wait mysql
+endif
 endif
 	$(PY) -m dq.extract
 	$(PY) -m dq.profile
@@ -48,7 +50,7 @@ lint:
 	$(PY) -m ruff check src tests
 
 small:              ## pipeline inteiro no perfil pequeno, sem MySQL
-	DQ_PROFILE=small $(MAKE) data corrupt etl evaluate report
+	DQ_PROFILE=small DQ_SOURCE_KIND=parquet $(MAKE) data corrupt etl evaluate report
 
 all: data corrupt etl evaluate report test
 

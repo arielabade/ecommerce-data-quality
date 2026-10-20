@@ -5,7 +5,8 @@ parâmetros cada etapa usa.
 Entrada: ``config/default.yaml`` sobreposto pelo perfil (``DQ_PROFILE=small``
 lê ``config/small.yaml``), ``config/corruption.yaml`` e ``config/cleaning.yaml``.
 Saída: objeto ``Settings`` com caminhos absolutos e os dicionários de parâmetros.
-Dependências: PyYAML. Credenciais só por ambiente (``DQ_SOURCE_URL`` ou
+Dependências: PyYAML. ``DQ_SOURCE_KIND`` troca a forma de extração.
+Credenciais só por ambiente (``DQ_SOURCE_URL`` ou
 ``MYSQL_HOST``/``MYSQL_PORT``/``MYSQL_USER``/``MYSQL_PASSWORD``/``MYSQL_DATABASE``).
 """
 
@@ -79,6 +80,8 @@ def get_settings(profile: str | None = None) -> Settings:
     cfg = _read("default.yaml")
     if profile != "default":
         cfg = _merge(cfg, _read(f"{profile}.yaml"))
+    if os.environ.get("DQ_SOURCE_KIND"):  # mysql | csv | parquet
+        cfg["source"]["kind"] = os.environ["DQ_SOURCE_KIND"]
     corruption = _merge(_read("corruption.yaml"), cfg.get("corruption_overrides", {}))
     cleaning = _merge(_read("cleaning.yaml"), cfg.get("cleaning_overrides", {}))
     return Settings(profile=profile, raw_config=cfg, corruption=corruption, cleaning=cleaning)

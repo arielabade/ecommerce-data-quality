@@ -3,8 +3,11 @@
 profile: default
 
 source:
-  # mysql = banco de origem (../ecommerce, docker compose); parquet = cópia já extraída
+  # mysql = banco de origem (../ecommerce, docker compose); csv = os CSVs do gerador
+  # que o MySQL carrega (mesmo conteúdo); parquet = cópia já extraída.
+  # Variável de ambiente DQ_SOURCE_KIND sobrepõe.
   kind: mysql
+  csv_dir: ../ecommerce/data/csv
   parquet_dir: data/source
   tables: [regioes, calendario_comercial, categorias, produtos, variantes,
            clientes, enderecos, pedidos, itens_pedido, fretes]
